@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгения Кабанова](https://up.htmlacademy.ru/adaptive/21/user/1482477).
-* Наставник: `Андрей Корейкин`
+* Наставник: [Андрей Корейкин](https://htmlacademy.ru/profile/ankormoreankor)
 
 ---
 
