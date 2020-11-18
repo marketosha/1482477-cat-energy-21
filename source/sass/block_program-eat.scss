@@ -1,0 +1,38 @@
+.program-eat {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $green;
+}
+
+.program-eat__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.program-eat__slogan {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.program-eat__button {
+  padding: 7px 44px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  text-decoration: none;
+  background-color: $basic_green;
+  &:hover {
+    background-color: $darker-green;
+  }
+  &:focus {
+    color: $white-opacity-30;
+  }
+}
+
+.button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
