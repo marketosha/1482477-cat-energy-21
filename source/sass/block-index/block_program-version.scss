@@ -1,36 +1,57 @@
+.program-version__type {
+  background-color: $basic_grey;
+}
+
 .sliming {
   position: relative;
 }
 
-.slimming__title {
-  font-family: "Oswald", "Arial", sans-serif;
+.program-version__title {
   font-size: 24px;
   line-height: 37px;
-  text-transform: uppercase;
+  margin-left: 100px;
+
+  &--sliming::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    width: 50px;
+    height: 53px;
+    background-image: url("../../img/slim_cat.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--fat::before{
+    content: "";
+    position: absolute;
+    left: 25px;
+    width: 67px;
+    height: 50px;
+    background-image: url("../../img/fat_cat.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.program-version__description {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.program-version__button {
+  width: 134px;
+  height: 10px;
+  font-size: 16px;
+  line-height: 16px;
   color: $black;
 
   &::before {
     content: "";
     position: absolute;
-    width: 50px;
-    height: 53px;
-    background-image: url("../img/slim-cat.svg");
+    left: 105px;
+    width: 32px;
+    height: 10px;
+    background-image: url("../../img/arrow_button.svg");
     background-repeat: no-repeat;
   }
 }
 
-.sliming__description {
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: $special_dark-grey;
-}
-
-.sliming__button {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  text-decoration: none;
-}

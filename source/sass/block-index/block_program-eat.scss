@@ -1,6 +1,4 @@
 .program-eat {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
   color: $white;
   text-transform: uppercase;
   background-color: $green;
@@ -21,7 +19,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $white;
-  text-decoration: none;
+
   background-color: $basic_green;
   &:hover {
     background-color: $darker-green;
@@ -31,8 +29,3 @@
   }
 }
 
-.button {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-}
