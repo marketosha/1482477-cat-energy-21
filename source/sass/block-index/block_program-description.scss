@@ -1,0 +1,53 @@
+.program-description__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.program-description__list {
+  position: relative;
+}
+
+.program-description__item {
+  width: 198px;
+  height: 54px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  &--nutritional::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../img/nutritional_icon.svg");
+    background-repeat: no-repeat;
+  }
+    &--fast::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../img/fast_icon.svg");
+    background-repeat: no-repeat;
+  }
+    &--economy::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../img/economy_icon.svg");
+    background-repeat: no-repeat;
+  }
+      &--changes::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../img/changes_icon.svg");
+    background-repeat: no-repeat;
+  }
+}
