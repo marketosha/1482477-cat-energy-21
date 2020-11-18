@@ -1,4 +1,5 @@
 .program-eat {
+  width: 280px;
   color: $white;
   text-transform: uppercase;
   background-color: $green;
@@ -7,6 +8,7 @@
 .program-eat__title {
   font-size: 36px;
   line-height: 36px;
+  color: $white;
 }
 
 .program-eat__slogan {
@@ -19,7 +21,6 @@
   font-size: 14px;
   line-height: 18px;
   color: $white;
-
   background-color: $basic_green;
   &:hover {
     background-color: $darker-green;
@@ -28,4 +29,3 @@
     color: $white-opacity-30;
   }
 }
-
