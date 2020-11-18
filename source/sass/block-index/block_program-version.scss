@@ -1,12 +1,16 @@
 .program-version__type {
+  width: 280px;
   background-color: $basic_grey;
 }
 
-.sliming {
+.program-type {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .program-version__title {
+  position: relative;
+  padding-top: 30px;
   font-size: 24px;
   line-height: 37px;
   margin-left: 100px;
@@ -14,17 +18,19 @@
   &--sliming::before {
     content: "";
     position: absolute;
-    left: 25px;
+    top: 21px;
+    left: -80px;
     width: 50px;
     height: 53px;
     background-image: url("../../img/slim_cat.svg");
     background-repeat: no-repeat;
   }
 
-  &--fat::before{
+  &--fat::before {
     content: "";
     position: absolute;
-    left: 25px;
+    top: 21px;
+    left: -80px;
     width: 67px;
     height: 50px;
     background-image: url("../../img/fat_cat.svg");
@@ -33,11 +39,15 @@
 }
 
 .program-version__description {
+  padding-right: 33px;
+  padding-left: 20px;
   font-size: 14px;
   line-height: 18px;
 }
 
 .program-version__button {
+  position: relative;
+  padding-left: 20px;
   width: 134px;
   height: 10px;
   font-size: 16px;
@@ -47,11 +57,10 @@
   &::before {
     content: "";
     position: absolute;
-    left: 105px;
+    left: 120px;
     width: 32px;
     height: 10px;
     background-image: url("../../img/arrow_button.svg");
     background-repeat: no-repeat;
   }
 }
-
