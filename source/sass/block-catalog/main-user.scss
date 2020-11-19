@@ -1,0 +1,37 @@
+.form__main-user {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  border: none;
+}
+
+.form input {
+  height: 45px;
+  border: 1px solid $lighter-grey;
+  &::placeholder {
+    padding-left: 16px;
+    color: $special_dark-grey;
+    text-transform: uppercase;
+  }
+  &:hover {
+    border: 1px solid $darker-grey;
+  }
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
+  &:disabled {
+    border: 2px solid $red;
+  }
+}
+
+.main-user__name {
+  width: 229px;
+}
+
+.main-user__weight {
+  width: 204px;
+}
+
+.main-user__age {
+  width: 172px;
+}
