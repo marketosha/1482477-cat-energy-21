@@ -27,11 +27,11 @@
       </ul>
     </nav>
   </header>
-  <main class="page-main center">
-    <h1 class="page-main__title title">Подбор программы</h1>
-    <p class="page-main__text title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  <main class="page-main center title">
+    <h1 class="page-main__title">Подбор программы</h1>
+    <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="form" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="form__main-user title">
+      <fieldset class="form__main-user">
         <h2 class="visually-hidden">Информация о коте</h2>
         <p>
           <label for="cat-name">Имя:*</label>
@@ -46,9 +46,9 @@
           <input class="main-user__age" id="cat-age" type="text" name="age-cat" placeholder="7">
         </p>
       </fieldset>
-      <fieldset class="program-filter filter">
+      <fieldset class="form__program-filter filter">
         <legend class="visually-hidden">Выбор программы</legend>
-        <ul>
+        <ul class="list">
           <li class="filter__option filter-radio">
             <input class="filter-radio__input visually-hidden" type="radio" name="program-eat" value="slim"
               id="filter__slim" checked>

@@ -1,0 +1,18 @@
+.form input {
+  height: 45px;
+  border: 1px solid $lighter-grey;
+  &::placeholder {
+    padding-left: 16px;
+    color: $special_dark-grey;
+    text-transform: uppercase;
+  }
+  &:hover {
+    border: 1px solid $darker-grey;
+  }
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
+  &:disabled {
+    border: 2px solid $red;
+  }
+}
