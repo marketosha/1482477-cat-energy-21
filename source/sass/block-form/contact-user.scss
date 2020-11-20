@@ -1,0 +1,36 @@
+.contact-user {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.contact-user__title {
+  font-weight: inherit;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.contact-user__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+}
+
+.contact-user__input {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 45px;
+  font-family: inherit;
+  color: $special_dark-grey;
+  border: 1px solid $darker-grey;
+}
+
+.contact-mail {
+  width: 219px;
+}
+
+.contact-tel {
+  width: 204px;
+}
