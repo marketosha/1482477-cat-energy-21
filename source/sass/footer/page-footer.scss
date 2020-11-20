@@ -1,7 +1,3 @@
-.page-footer__contacts {
-  width: 280px;
-}
-
 .contacts__title {
   width: 140px;
   font-size: 16px;
@@ -13,43 +9,33 @@
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
+  color: $special_dark-grey;
 }
 
 .page-footer__wrapper {
-  width: 280px;
   background-color: $basic_grey;
 }
 
 .social__icon {
-  fill: $black-icon;
+  color: $black-icon;
+
   &:hover {
-    fill: $basic_green;
+    color: $basic_green;
   }
 
   &:focus {
-    fill: $light-green;
-  }
-}
-
-.social__icon-facebook {
-  stroke: $black-icon;
-  &:hover {
-    stroke: $basic_green;
-  }
-  &:focus {
-    stroke: $light-green;
+    color: $light-green;
   }
 }
 
 .copyright__link {
-  text-decoration: none;
-}
-
-.copyright__text {
   font-size: 16px;
   line-height: 18px;
-   &:focus {
-    color: $black-opacity-30;}
+  color: $special_dark-grey;
+
+  &:focus {
+    color: $black-opacity-30;
+  }
 }
 
 .copyright__text-design {
