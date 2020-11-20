@@ -1,22 +1,23 @@
 .program-example {
-  width: 279px;
   background-color: $light-grey;
 }
 
 .program-example__title {
+  padding-top: 27px;
   font-size: 36px;
   line-height: 40px;
-  padding-top: 27px;
 }
 
 .program-example__text {
+  padding-right: 2px;
   font-size: 14px;
   line-height: 18px;
+  color: $special_dark-grey;
 }
 
 .example__index {
   width: 124px;
-  height: 64px;
+  min-height: 64px;
   padding-bottom: 26px;
 }
 
@@ -30,7 +31,8 @@
 
 .index__description {
   font-size: 12px;
-  line-height: 12px;
+  line-height: normal;
+  color: $special_dark-grey;
 }
 
 .program-example-cost__text {

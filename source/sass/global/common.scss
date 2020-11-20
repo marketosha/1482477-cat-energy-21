@@ -1,14 +1,19 @@
-.page {
-  height: 100%;
-}
-
-.page-body {
-  margin: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
-  width: 320px;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .center {
+  margin: 0;
   padding: 0 20px;
 }
 
@@ -18,21 +23,22 @@
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
   color: $black;
 }
 
 .text {
   font-family: "Arial", sans-serif;
-  font-weight: 400;
-  color: $special_dark-grey;
 }
 
 .button {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
+  padding: 7px 44px;
   text-transform: uppercase;
-  text-decoration: none;
+  background-color: $basic_green;
 }
+
+

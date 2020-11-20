@@ -1,27 +1,29 @@
 .program-eat {
-  width: 280px;
   color: $white;
   text-transform: uppercase;
   background-color: $green;
 }
 
 .program-eat__title {
+  width: 249px;
+  margin: 0;
+  padding: 0;
   font-size: 36px;
-  line-height: 36px;
+  line-height: normal;
+  font-weight: normal;
   color: $white;
 }
 
 .program-eat__slogan {
   font-size: 14px;
-  line-height: 14px;
+  line-height: normal;
 }
 
 .program-eat__button {
-  padding: 7px 44px;
   font-size: 14px;
   line-height: 18px;
   color: $white;
-  background-color: $basic_green;
+
   &:hover {
     background-color: $darker-green;
   }
