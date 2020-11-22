@@ -1,0 +1,48 @@
+.program-description__title {
+  margin-bottom: 38px;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.program-description__list {
+  position: relative;
+}
+
+.program-description__item {
+  width: 198px;
+  height: 54px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &--nutritional::before {
+    background-image: url("../img/nutritional_icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--fast::before {
+    background-image: url("../img/fast_icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--economy::before {
+    background-image: url("../img/economy_icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--changes::before {
+    background-image: url("../img/changes_icon.svg");
+    background-repeat: no-repeat;
+  }
+}

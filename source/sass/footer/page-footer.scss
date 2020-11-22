@@ -1,0 +1,47 @@
+.contacts__title {
+  width: 140px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special_dark-grey;
+}
+
+.footer-container-map {
+  border: none;
+}
+
+.page-footer__wrapper {
+  background-color: $basic_grey;
+}
+
+.social__icon {
+  color: $black-icon;
+
+  &:hover {
+    color: $basic_green;
+  }
+
+  &:focus {
+    color: $light-green;
+  }
+}
+
+.copyright__link {
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+
+  &:focus {
+    color: $black-opacity-30;
+  }
+}
+
+.copyright__text-design {
+  text-transform: uppercase;
+}

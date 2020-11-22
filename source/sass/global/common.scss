@@ -1,0 +1,41 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.center {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  color: $black;
+}
+
+.text {
+  font-family: "Arial", sans-serif;
+}
+
+.button {
+  padding: 7px 44px;
+  text-transform: uppercase;
+  background-color: $basic_green;
+}
