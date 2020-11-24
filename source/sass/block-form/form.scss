@@ -1,4 +1,6 @@
 .form input {
+  box-sizing: border-box;
+  padding-left: 16px;
   height: 45px;
   border: 1px solid $lighter-grey;
 
@@ -9,11 +11,12 @@
     text-transform: uppercase;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 1px solid $darker-grey;
   }
 
-  &:focus {
+  &:active {
     border: 2px solid $special_dark-grey;
   }
 
