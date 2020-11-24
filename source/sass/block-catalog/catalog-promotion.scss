@@ -1,0 +1,17 @@
+.catalog-promotion__slogan {
+  height: 250px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  background-color: $basic_green;
+  text-align: center;
+  &::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+top: -50px;
+    background-image: url("../img/gift_catalog.svg");
+    fill: red;
+  }
+}
