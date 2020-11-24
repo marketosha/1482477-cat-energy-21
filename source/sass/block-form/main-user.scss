@@ -1,15 +1,17 @@
 .form__main-user {
+  font-family: inherit;
   text-transform: uppercase;
 }
 
 .main-user__name {
-  width: 198px;
+  width: 228px;
 }
 
 .main-user__weight {
-  width: 176px;
+  margin-left: 15px;
+  width: 191px;
 }
 
 .main-user__age {
-  width: 143px;
+  width: 172px;
 }

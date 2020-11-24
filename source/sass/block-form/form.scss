@@ -1,12 +1,10 @@
 .form input {
-  box-sizing: border-box;
   padding-left: 16px;
   height: 45px;
   border: 1px solid $lighter-grey;
 
   &::placeholder {
     font-family: inherit;
-    padding-left: 16px;
     color: $special_dark-grey;
     text-transform: uppercase;
   }
