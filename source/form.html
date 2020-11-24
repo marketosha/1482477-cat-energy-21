@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body center">
+<body class="page-body">
   <header class="page-header center">
     <a class="page-header__logo">
       <img src="https://via.placeholder.com/150x150" alt="">
@@ -27,11 +27,13 @@
       </ul>
     </nav>
   </header>
-  <main class="page-main center title">
-    <h1 class="page-main__title">Подбор программы</h1>
-    <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    <form class="form" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="form__main-user main-user form-fieldset">
+  <main class="page-main title">
+    <div class="center">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </div>
+    <form class="form form-fieldset" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="form__main-user main-user form-center">
         <h2 class="visually-hidden">Информация о коте</h2>
         <p>
           <label for="cat-name">Имя:*</label>
@@ -46,7 +48,7 @@
           <input class="main-user__age" id="cat-age" type="text" name="age-cat" placeholder="7">
         </p>
       </fieldset>
-      <fieldset class="form__program-filter filter form-fieldset">
+      <fieldset class="form__program-filter filter form-center">
         <legend class="visually-hidden">Выбор программы</legend>
         <ul class="list">
           <li class="filter__option filter-radio">
@@ -66,7 +68,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__contact-user contact-user form-fieldset">
+      <fieldset class="form__contact-user contact-user form-center">
         <h2 class="contact-user__title title">Контактные данные (владельца кота)</h2>
         <p>
           <label class="contact-user__label" for="contact-mail">E-mail:*</label>
@@ -80,12 +82,12 @@
             required>
         </p>
       </fieldset>
-      <fieldset class="form__user-comment user-comment form-fieldset">
+      <fieldset class="form__user-comment user-comment form-center">
         <label for="comment-text">Комментарий</label>
         <textarea name="user-comment__text" id="comment-text" rows="10"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="form__extra-filter extra-filter form-fieldset">
+      <fieldset class="form__extra-filter extra-filter form-center">
         <legend class="extra-filter__title">Дополнительно</legend>
         <ul class="list">
           <li class="extra-filter__option filter-checkbox">
@@ -110,8 +112,8 @@
           </li>
         </ul>
       </fieldset>
-      <button class="filter-button button" type="submit">Отправить заявку</button>
-      <p class="filter-description text">* — Обязательные поля</p>
+      <button class="filter-button button form-fieldset" type="submit">Отправить заявку</button>
+      <p class="filter-description text center">* — Обязательные поля</p>
     </form>
   </main>
   <footer class="page-footer center">
