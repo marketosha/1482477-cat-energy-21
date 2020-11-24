@@ -1,17 +1,24 @@
-.catalog-promotion__slogan {
-  height: 250px;
+.catalog-promotion {
   position: relative;
+  width: 280px;
+  height: 289px;
+  background-image: url("../../img/gift_cat.png");
+}
+
+.catalog-promotion__slogan {
+  padding-top: 186px;
   font-size: 16px;
   line-height: 20px;
   color: $white;
-  background-color: $basic_green;
   text-align: center;
+
   &::before {
     content: "";
     position: absolute;
-    box-sizing: border-box;
-top: -50px;
-    background-image: url("../img/gift_catalog.svg");
-    fill: red;
+    width: 78px;
+    height: 80px;
+    top: 55px;
+    left: 100px;
+    background-image: url("../../img/gift_catalog.svg");
   }
 }
