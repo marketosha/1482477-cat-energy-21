@@ -23,6 +23,8 @@
 }
 
 .link {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
 }
 
@@ -35,19 +37,22 @@
 }
 
 .button {
+  display: block;
+  width: 280px;
   padding: 7px 44px;
   text-transform: uppercase;
+  text-align: center;
   background-color: $basic_green;
   border: none;
-}
-
-.form-fieldset {
-  margin: 0;
-  padding: 0;
 }
 
 .form-center {
   margin: 0;
   padding: 0 20px;
   border: none;
+}
+
+.style-no {
+  margin: 0;
+  padding: 0;
 }

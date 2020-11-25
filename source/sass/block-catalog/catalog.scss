@@ -1,3 +1,23 @@
+.page-main__wrapper {
+  border-top: 1px solid $border-grey;
+}
+
+.page-main__catalog-title {
+  margin-bottom: 41px;
+}
+
+.catalog__item {
+  border-top: 1px solid $border-lighter-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $border-lighter-grey;
+  }
+}
+
+.catalog__image-product {
+  margin-top: 19px;
+}
+
 .catalog__title {
   font-weight: 400;
   font-size: 16px;
@@ -13,14 +33,21 @@
 }
 
 .catalog__button {
+  margin-bottom: 14px;
   color: $white;
+
   &:hover,
   &:focus {
     background-color: $darker-green;
   }
+
   &:active {
     color: $white-opacity-30;
   }
+}
+
+.product-else {
+  border-bottom: 1px solid $border-grey;
 }
 
 .product-else__title {
@@ -30,6 +57,7 @@
   line-height: 20px;
   color: $black-text;
   text-transform: uppercase;
+
   &::before {
     content: "";
     position: absolute;
@@ -39,6 +67,7 @@
     height: 2px;
     background-color: $grey;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -58,6 +87,9 @@
 }
 
 .product-button {
+  margin-bottom: 5px;
+  height: 60px;
+  padding: 20px 94px;
   color: $special_dark-grey;
   background-color: $basic_grey;
 }
