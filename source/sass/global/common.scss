@@ -12,8 +12,12 @@
 }
 
 .center {
-  margin: 0;
-  padding: 0 20px;
+ padding: 0 20px;
+}
+
+.page-body {
+  margin: 0 auto;
+  padding: 0 calc(50% - 590px);
 }
 
 .list {
@@ -23,8 +27,6 @@
 }
 
 .link {
-  margin: 0;
-  padding: 0;
   text-decoration: none;
 }
 
@@ -52,7 +54,7 @@
   border: none;
 }
 
-.style-no {
+.indents-to-zero {
   margin: 0;
   padding: 0;
 }
