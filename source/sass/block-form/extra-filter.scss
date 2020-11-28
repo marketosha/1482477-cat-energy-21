@@ -1,6 +1,25 @@
+.extra-filter {
+  position: relative;
+}
+
 .extra-filter__title {
+  padding-top: 23px;
   font-size: 24px;
   line-height: 26px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: -52%;
+    width: 100%;
+    border: 2px solid $basic_green;
+    background-color: $basic_green;
+  }
+}
+
+.extra-filter__list {
+  margin-top: 39px;
 }
 
 .extra-filter__option {
@@ -22,14 +41,13 @@
 .extra-filter__option label {
   display: block;
   position: relative;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .filter-checkbox__input + label::before {
   content: "";
   position: absolute;
   display: inline-block;
-  box-sizing: border-box;
   width: 30px;
   height: 30px;
   top: -10px;

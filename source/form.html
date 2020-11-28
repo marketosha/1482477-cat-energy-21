@@ -8,9 +8,9 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header center">
-    <a class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" alt="">
+  <header class="page-header container">
+    <a class="page-header__logo" aria-label="На главную">
+      <img src="https://via.placeholder.com/150x150" alt="Логотип CatEnergy">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button" aria-label="Открыть меню"></button>
@@ -28,12 +28,12 @@
     </nav>
   </header>
   <main class="page-main title">
-    <div class="center">
+    <div class="page-main__wrapper container">
       <h1 class="page-main__title">Подбор программы</h1>
       <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
     <form class="form indents-to-zero" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="form__main-user main-user form-center">
+      <fieldset class="form__main-user main-user form-border container">
         <h2 class="visually-hidden">Информация о коте</h2>
         <p>
           <label for="cat-name">Имя:*</label>
@@ -48,7 +48,7 @@
           <input class="main-user__age" id="cat-age" type="text" name="age-cat" placeholder="7">
         </p>
       </fieldset>
-      <fieldset class="form__program-filter filter form-center">
+      <fieldset class="form__program-filter filter container">
         <legend class="visually-hidden">Выбор программы</legend>
         <ul class="list">
           <li class="filter__option filter-radio">
@@ -68,7 +68,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__contact-user contact-user form-center">
+      <fieldset class="form__contact-user contact-user form-border container">
         <h2 class="contact-user__title title">Контактные данные (владельца кота)</h2>
         <p>
           <label class="contact-user__label" for="contact-mail">E-mail:*</label>
@@ -82,14 +82,14 @@
             required>
         </p>
       </fieldset>
-      <fieldset class="form__user-comment user-comment form-center">
+      <fieldset class="form__user-comment user-comment form-border container">
         <label for="comment-text">Комментарий</label>
         <textarea name="user-comment__text" id="comment-text" rows="10"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="form__extra-filter extra-filter form-center">
-        <legend class="extra-filter__title">Дополнительно</legend>
-        <ul class="list">
+      <fieldset class="form__extra-filter extra-filter form-border container">
+        <legend class="extra-filter__title extra-filter__title">Дополнительно</legend>
+        <ul class="extra-filter__list list">
           <li class="extra-filter__option filter-checkbox">
             <input class="filter-checkbox__input filter-input visually-hidden" type="checkbox" name="extra-suger"
               value="suger" id="extra-filter__suger" checked>
@@ -112,24 +112,25 @@
           </li>
         </ul>
       </fieldset>
-      <button class="filter-button button form-fieldset" type="submit">Отправить заявку</button>
-      <p class="filter-description text center">* — Обязательные поля</p>
+      <div class="container">
+        <button class="filter-button button form-fieldset" type="submit">Отправить заявку</button>
+        <p class="filter-description text">* — Обязательные поля</p>
+      </div>
     </form>
   </main>
-  <footer class="page-footer center">
-    <section class="page-footer__contacts contacts">
+  <footer class="page-footer">
+    <section class="page-footer__contacts contacts container">
       <h2 class="visually-hidden">Адрес Кэт Энерджи</h2>
       <b class="contacts__title title">Приглашаем к сотрудничеству дилеров!</b>
       <address class="contacts__text text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </section>
     <div class="page-footer__map">
-      <iframe class="footer-container-map"
+      <iframe class="footer-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603034823112!5m2!1sru!2sru"
-        style="border:0;" allowfullscreen
-        title="Офис компании Кэт Энерджи по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        allowfullscreen title="Офис компании Кэт Энерджи по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </iframe>
     </div>
-    <div class="page-footer__wrapper">
+    <div class="container">
       <div class="page-footer__logo">
         <img src="https://via.placeholder.com/150x150" alt="">
       </div>
@@ -168,9 +169,9 @@
         </ul>
       </section>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link text link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <span class="copyright__text-design">Html</span> Academy
-          <img class="link__image" src="https://via.placeholder.com/150x150" alt="">
+          <img class="copyright__image" src="https://via.placeholder.com/150x150" alt="">
         </a>
       </div>
     </div>

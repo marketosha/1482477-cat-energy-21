@@ -1,7 +1,22 @@
+.contact-user {
+  position: relative;
+}
+
 .contact-user__title {
+  margin-top: 26px;
   font-weight: inherit;
   font-size: 24px;
   line-height: 26px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -55%;
+    width: 100%;
+    border: 2px solid $basic_green;
+    background-color: $basic_green;
+  }
 }
 
 .contact-user__label {
