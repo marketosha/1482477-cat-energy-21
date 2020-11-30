@@ -11,9 +11,8 @@
   overflow: hidden;
 }
 
-.center {
-  margin: 0;
-  padding: 0 20px;
+.container {
+  padding: 0 calc(50% - 140px);
 }
 
 .list {
@@ -22,12 +21,14 @@
   list-style: none;
 }
 
-.link {
-  text-decoration: none;
-}
-
 .title {
+  margin: 0;
+  font-weight: 400;
   color: $black;
+
+  &--white {
+    color: $white;
+  }
 }
 
 .text {
@@ -35,19 +36,30 @@
 }
 
 .button {
+  display: block;
+  min-width: 280px;
   padding: 7px 44px;
   text-transform: uppercase;
+  text-align: center;
+  color: $white;
   background-color: $basic_green;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $darker-green;
+  }
+
+  &:active {
+    color: $white-opacity-30;
+  }
 }
 
-.form-fieldset {
+.form-border {
+  border: none;
+}
+
+.indents-to-zero {
   margin: 0;
   padding: 0;
-}
-
-.form-center {
-  margin: 0;
-  padding: 0 20px;
-  border: none;
 }

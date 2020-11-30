@@ -5,6 +5,7 @@
 
 .program-type {
   position: relative;
+  margin-top: 22px;
   margin-bottom: 20px;
 }
 
@@ -38,32 +39,24 @@
 }
 
 .program-version__description {
-  padding-right: 33px;
-  padding-left: 20px;
+  padding: 29px 33px 23px 20px;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+  border-bottom: 1px solid $border-grey;
 }
 
 .program-version__button {
+  display: block;
   position: relative;
-  padding-left: 20px;
-  width: 134px;
-  height: 10px;
+  padding: 19px 0 22px 20px;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
   color: $black;
-  text-decoration: none;
   background-color: $basic_grey;
 
-  &::before {
-    content: "";
-    position: absolute;
-    box-sizing: border-box;
-    left: 120px;
-    width: 32px;
-    height: 10px;
-    background-image: url("../img/arrow_button.svg");
-    background-repeat: no-repeat;
+  &:active {
+    opacity: 0.3;
   }
 }

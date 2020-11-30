@@ -1,0 +1,40 @@
+.catalog__item {
+  border-top: 1px solid $border-lighter-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $border-lighter-grey;
+  }
+}
+
+.catalog__image-product {
+  margin-top: 19px;
+}
+
+.catalog__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $form-black;
+  text-transform: uppercase;
+}
+
+.catalog__index {
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}
+
+.catalog__button {
+  width: 100%;
+  margin-bottom: 14px;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: $darker-green;
+  }
+
+  &:active {
+    color: $white-opacity-30;
+  }
+}

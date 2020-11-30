@@ -8,9 +8,9 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header center">
+  <header class="page-header container">
     <a class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" alt="">
+      <img src="https://via.placeholder.com/150x150" alt="Логотип CatEnergy">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button" aria-label="Открыть меню"></button>
@@ -27,31 +27,43 @@
       </ul>
     </nav>
   </header>
-  <main class="page-main center">
+  <main class="page-main">
     <h1 class="visually-hidden">Кэт Энерджи - питание для котов</h1>
-    <section class="program-eat">
-      <h2 class="program-eat__title title">Функциональное<br>питание для котов</h2>
+    <section class="program-eat container">
+      <h2 class="program-eat__title title title--white">Функциональное<br>питание для котов</h2>
       <p class="program-eat__slogan">Занялся собой? Займись котом!</p>
       <img src="https://via.placeholder.com/150x150" alt="blank.html">
-      <a class="program-eat__button button link" href="">Подобрать программу</a>
+      <a class="program-eat__button button" href="form.html">Подобрать программу</a>
     </section>
-    <section class="program-version">
+    <section class="program-version container">
       <h2 class="visually-hidden">Варианты программ питания</h2>
       <article class="program-version__type program-type">
         <h2 class="program-version__title program-version__title--sliming title">Похудение</h2>
-        <p class="program-version__description text">Ваш кот весит больше собаки и почти утратил способность лазить по
+        <p class="program-version__description indents-to-zero text">Ваш кот весит больше собаки и почти утратил
+          способность лазить по
           деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="program-version__button button" href="blank.html">Каталог slim</a>
+        <a class="program-version__button" href="blank.html">Каталог slim
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+            <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+          </svg>
+        </a>
       </article>
       <article class="program-version__type program-type">
         <h2 class="program-version__title program-version__title--fat title">Набор массы</h2>
-        <p class="program-version__description text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+        <p class="program-version__description indents-to-zero text">Заработать авторитет среди дворовых котов и даже
+          собак? Серия Cat
           Energy
           Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="program-version__button button" href="blank.html">Каталог pro</a>
+        <a class="program-version__button" href="blank.html">Каталог pro
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+            <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+          </svg>
+        </a>
       </article>
     </section>
-    <section class="program-description">
+    <section class="program-description container">
       <h2 class="program-description__title title">Как это работает</h2>
       <ul class="program-description__list list">
         <li class="program-description__item program-description__item--nutritional text">
@@ -68,7 +80,7 @@
         </li>
       </ul>
     </section>
-    <section class="program-example">
+    <section class="program-example container">
       <div class="program-example__description">
         <h2 class="program-example__title title">Живой пример</h2>
         <p class="program-example__text text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
@@ -86,44 +98,44 @@
           <dd class="index__description text">затрачено времени</dd>
         </div>
       </dl>
-      <p class="program-example-cost__text title">Затраты на питание: 15 000 руб.</p>
-      <div class="example__image">
-        <img class="example__image example__image--before" src="https://via.placeholder.com/150x150" alt="">
-        <img class="example__image example__image--after visually-hidden" src="https://via.placeholder.com/150x150"
+      <p class="program-example__cost-text title">Затраты на питание: 15 000 руб.</p>
+      <div class="program-example__image example-image">
+        <img class="example-image__image example-image__image--before" src="https://via.placeholder.com/150x150" alt="">
+        <img class="example-image__image example-image__image--after visually-hidden" src="https://via.placeholder.com/150x150"
           alt="">
       </div>
-      <div class="example__filter filter">
-        <div class="filter__controls">
-          <div class="controls__scale">
+      <div class="program-example__filter example-filter">
+        <div class="example-filter__controls example-controls">
+          <div class="example-controls__scale scale">
             <div class="scale__bar"></div>
           </div>
-          <div class="controls__toggle controls__toggle--toggle-min"></div>
-          <div class="controls__toggle controls__toggle--toggle-max"></div>
+          <div class="example-controls__toggle example-controls__toggle--toggle-min"></div>
+          <div class="example-controls__toggle example-controls__toggle--toggle-max"></div>
         </div>
-        <div class="controls__index">
-          <label class="index__min title">
+        <div class="program-example__index example-index">
+          <label class="example-index__min title">
             было <input class="visually-hidden" type="text" name="index-min" value="">
           </label>
-          <label class="index__max title">
+          <label class="example-index__max title">
             стало <input class="visually-hidden" type="text" name="index-max" value="">
           </label>
         </div>
       </div>
     </section>
   </main>
-  <footer class="page-footer center">
-    <section class="page-footer__contacts contacts">
+  <footer class="page-footer">
+    <section class="page-footer__contacts page-footer__contacts--white contacts container">
       <h2 class="visually-hidden">Адрес Кэт Энерджи</h2>
       <b class="contacts__title title">Приглашаем к сотрудничеству дилеров!</b>
       <address class="contacts__text text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </section>
     <div class="page-footer__map">
-      <iframe class="footer-container-map"
+      <iframe class="footer-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603034823112!5m2!1sru!2sru"
         allowfullscreen title="Офис компании Кэт Энерджи по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </iframe>
     </div>
-    <div class="page-footer__wrapper">
+    <div class="container">
       <div class="page-footer__logo">
         <img src="https://via.placeholder.com/150x150" alt="">
       </div>
@@ -162,9 +174,9 @@
         </ul>
       </section>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link text link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <span class="copyright__text-design">Html</span> Academy
-          <img class="link__image" src="https://via.placeholder.com/150x150" alt="">
+          <img class="copyright__image" src="https://via.placeholder.com/150x150" alt="">
         </a>
       </div>
     </div>
