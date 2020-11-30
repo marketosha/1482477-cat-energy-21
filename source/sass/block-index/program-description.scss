@@ -5,10 +5,13 @@
 }
 
 .program-description__list {
+  display: grid;
+  grid-template-columns: 1fr;
   position: relative;
 }
 
 .program-description__item {
+  position: relative;
   width: 198px;
   height: 54px;
   margin-left: 80px;
@@ -44,5 +47,28 @@
   &--changes::before {
     background-image: url("../img/changes_icon.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-description__title {
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .program-description__list {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 37px;
+    padding: 28px 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+
+    .program-description__item {
+      display: block;
+      position: relative;
+      margin-top: 32px;
+      margin-right: 137px;
+    }
   }
 }

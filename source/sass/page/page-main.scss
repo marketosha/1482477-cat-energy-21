@@ -1,3 +1,8 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-main__wrapper {
   border-top: 1px solid $border-grey;
 }

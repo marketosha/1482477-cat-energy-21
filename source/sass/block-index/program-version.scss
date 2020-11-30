@@ -1,4 +1,16 @@
+.program-version {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .program-version__type {
+  margin-bottom: 20px;
   height: 100%;
   background-color: $basic_grey;
 }
@@ -7,6 +19,10 @@
   position: relative;
   margin-top: 22px;
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .program-version__title {
@@ -36,6 +52,16 @@
     background-image: url("../img/fat_cat.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 40px;
+  }
 }
 
 .program-version__description {
@@ -44,6 +70,16 @@
   line-height: 18px;
   color: $special_dark-grey;
   border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .program-version__button {
