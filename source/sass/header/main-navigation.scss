@@ -12,6 +12,7 @@
   &:focus {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -20,11 +21,11 @@
 .main-navigation__list {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex: 1 0 auto;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
@@ -32,6 +33,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
+    align-self: flex-end;
     flex-direction: row;
   }
 
@@ -79,7 +81,7 @@
 
 @media (min-width: $desktop-width) {
   .main-navigation__link {
-    color: $white;
+    color: red;
   }
 
   .main-navigation__item {

@@ -59,16 +59,27 @@
 
   .program-description__list {
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 37px;
+    gap: 37px;
     padding: 28px 0 0 0;
     font-size: 16px;
     line-height: 24px;
+  }
 
-    .program-description__item {
-      display: block;
-      position: relative;
-      margin-top: 32px;
-      margin-right: 137px;
-    }
+  .program-description__item {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-description__list {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 37px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program-description__item {
+    margin: 0;
   }
 }

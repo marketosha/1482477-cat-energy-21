@@ -1,11 +1,12 @@
 .program-version {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
   }
 }
 
@@ -16,13 +17,9 @@
 }
 
 .program-type {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   position: relative;
-  margin-top: 22px;
-  margin-bottom: 20px;
-
-  @media (min-width: $desktop-width) {
-    margin-left: 80px;
-  }
 }
 
 .program-version__title {
@@ -51,16 +48,6 @@
     width: 67px;
     background-image: url("../img/fat_cat.svg");
     background-repeat: no-repeat;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 36px;
-    line-height: 40px;
   }
 }
 

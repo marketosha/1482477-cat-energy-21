@@ -12,7 +12,7 @@
   <header class="page-header page-header__wrapper container">
     <div class="page-header__container">
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150"  height="38" alt="Логотип CatEnergy">
+        <img src="https://via.placeholder.com/150x150" height="38" alt="Логотип CatEnergy">
       </a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
     </div>
@@ -79,49 +79,55 @@
           Замените один-два приема обычной еды на наше функциональное питание.
         </li>
         <li class="program-description__item program-description__item--changes text">
-          Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!.
+          Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
         </li>
       </ul>
     </section>
     <section class="program-example container">
+      <h2 class="program-example__title title container">Живой пример</h2>
       <div class="program-example__description">
-        <h2 class="program-example__title title">Живой пример</h2>
-        <p class="program-example__text text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-          Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов в день.</p>
-      </div>
-      <dl class="program-example__stats example">
-        <div class="example__index index">
-          <dt class="index__number title">5 кг</dt>
-          <dd class="index__description text">снижение веса</dd>
+          <p class="program-example__text text indents-to-zero">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+            обычный корм на Cat
+            Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов в день.</p>
+        <div class="program-example__stats-wrapper container">
+          <dl class="program-example__stats example">
+            <div class="example__index index">
+              <dt class="index__number title">5 кг</dt>
+              <dd class="index__description text">снижение веса</dd>
+            </div>
+            <div class="example__index index">
+              <dt class="index__number title">60 дней</dt>
+              <dd class="index__description text">затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="program-example__cost-text title">Затраты на питание: 15 000 руб.</p>
         </div>
-        <div class="example__index index">
-          <dt class="index__number title">60 дней</dt>
-          <dd class="index__description text">затрачено времени</dd>
-        </div>
-      </dl>
-      <p class="program-example__cost-text title">Затраты на питание: 15 000 руб.</p>
-      <div class="program-example__image example-image">
-        <img class="example-image__image example-image__image--before" src="https://via.placeholder.com/150x150" alt="">
-        <img class="example-image__image example-image__image--after visually-hidden"
-          src="https://via.placeholder.com/150x150" alt="">
       </div>
-      <div class="program-example__filter example-filter">
-        <div class="example-filter__controls example-controls">
-          <div class="example-controls__scale scale">
-            <div class="scale__bar"></div>
+      <div class="program-example__slider container">
+        <div class="program-example__image example-image">
+          <img class="example-image__image example-image__image--before" src="https://via.placeholder.com/150x150"
+            alt="">
+          <img class="example-image__image example-image__image--after visually-hidden"
+            src="https://via.placeholder.com/150x150" alt="">
+        </div>
+        <div class="program-example__filter example-filter">
+          <div class="example-filter__controls example-controls">
+            <div class="example-controls__scale scale">
+              <div class="scale__bar"></div>
+            </div>
+            <div class="example-controls__toggle example-controls__toggle--toggle-min"></div>
+            <div class="example-controls__toggle example-controls__toggle--toggle-max"></div>
           </div>
-          <div class="example-controls__toggle example-controls__toggle--toggle-min"></div>
-          <div class="example-controls__toggle example-controls__toggle--toggle-max"></div>
-        </div>
-        <div class="program-example__index example-index">
-          <label class="example-index__min title">
-            было <input class="visually-hidden" type="text" name="index-min" value="">
-          </label>
-          <label class="example-index__max title">
-            стало <input class="visually-hidden" type="text" name="index-max" value="">
-          </label>
+          <div class="program-example__index example-index">
+            <label class="example-index__min title">
+              было <input class="visually-hidden" type="text" name="index-min" value="">
+            </label>
+            <label class="example-index__max title">
+              стало <input class="visually-hidden" type="text" name="index-max" value="">
+            </label>
+          </div>
         </div>
       </div>
     </section>
