@@ -24,9 +24,13 @@
     content: "";
     position: absolute;
     box-sizing: border-box;
-    left: 5px;
+    left: -80px;
     width: 60px;
     height: 60px;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+    }
   }
 
   &--nutritional::before {
@@ -59,14 +63,19 @@
 
   .program-description__list {
     grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
     gap: 37px;
-    padding: 28px 0 0 0;
+    height: 280px;
     font-size: 16px;
     line-height: 24px;
   }
 
   .program-description__item {
     margin: 0;
+
+    &::before {
+      top: -65px;
+    }
   }
 }
 
@@ -81,5 +90,9 @@
 
   .program-description__item {
     margin: 0;
+
+    &::before {
+      top: -65px;
+    }
   }
 }
