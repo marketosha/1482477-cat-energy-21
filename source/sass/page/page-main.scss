@@ -1,4 +1,6 @@
 .page-main__wrapper {
+  display: flex;
+  flex-direction: column;
   border-top: 1px solid $border-grey;
 }
 
@@ -10,6 +12,7 @@
   margin-top: 27px;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
 }
 
 .page-main__text {
@@ -17,4 +20,21 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    border: none;
+  }
+
+  .page-main__title {
+    font-size: 60px;
+    line-height: 64px;
+  }
+
+  .page-main__text {
+    margin-top: 54px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

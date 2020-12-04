@@ -3,26 +3,29 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
-  <header class="page-header container">
-    <a class="page-header__logo" aria-label="На главную">
-      <img src="https://via.placeholder.com/150x150" alt="Логотип CatEnergy">
-    </a>
+  <header class="page-header page-header__wrapper container">
+    <div class="page-header__container">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" height="38" alt="Логотип CatEnergy">
+      </a>
+      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+    </div>
     <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="main-navigation__list list">
         <li class="main-navigation__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="main-navigation__item main-navigation__item--active">
-          <a>Каталог продукции</a>
+          <a class="main-navigation__link" href="index.html">Главная</a>
         </li>
         <li class="main-navigation__item">
-          <a href="form.html">Подбор программы</a>
+          <a class="main-navigation__link main-navigation__item--active">Каталог продукции</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -36,7 +39,8 @@
       <ul class="catalog__list list">
         <li class="catalog__item text container">
           <a class="catalog__image" href="blank.html">
-            <img class="catalog__image-product" src="https://via.placeholder.com/150x150" alt="Кошачий корм Cat Energy Pro в оранжевой банке средних размеров с фоновым изображением запеченной курицы">
+            <img class="catalog__image-product" src="https://via.placeholder.com/150x150"
+              alt="Кошачий корм Cat Energy Pro в оранжевой банке средних размеров с фоновым изображением запеченной курицы">
           </a>
           <h3><a class="catalog__title" href="blank.html" aria-label="На страницу товара">Cat Energy Pro 500 г</a></h3>
           <dl class="catalog__index text">
@@ -51,7 +55,8 @@
         </li>
         <li class="catalog__item text container">
           <a class="catalog__image" href="blank.html" aria-label="На страницу товара">
-            <img class="catalog__image-product" src="https://via.placeholder.com/150x150" alt="Кошачий корм Cat Energy Pro в оранжевой банке болших размеров с фоновым изображением запеченной курицы">
+            <img class="catalog__image-product" src="https://via.placeholder.com/150x150"
+              alt="Кошачий корм Cat Energy Pro в оранжевой банке болших размеров с фоновым изображением запеченной курицы">
           </a>
           <h3><a class="catalog__title" href="blank.html" aria-label="На страницу товара">Cat Energy Pro 1000 г</a></h3>
           <dl class="catalog__index">
@@ -66,7 +71,8 @@
         </li>
         <li class="catalog__item text container">
           <a class="catalog__image" href="blank.html" aria-label="На страницу товара">
-            <img class="catalog__image-product" src="https://via.placeholder.com/150x150" alt="Кошачий корм Cat Energy Pro в зеленой банке средних размеров с фоновым изображением кусочков приготовленной рыбы">
+            <img class="catalog__image-product" src="https://via.placeholder.com/150x150"
+              alt="Кошачий корм Cat Energy Pro в зеленой банке средних размеров с фоновым изображением кусочков приготовленной рыбы">
           </a>
           <h3><a class="catalog__title" href="" aria-label="На страницу товара">Cat Energy Pro 500 г</a></h3>
           <dl class="catalog__index">
@@ -81,7 +87,8 @@
         </li>
         <li class="catalog__item text container">
           <a class="catalog__image" href="blank.html" aria-label="На страницу товара">
-            <img class="catalog__image-product" src="https://via.placeholder.com/150x150" alt="Кошачий корм Cat Energy Pro в зеленой банке болших размеров с фоновым изображением кусочков приготовленной рыбы">
+            <img class="catalog__image-product" src="https://via.placeholder.com/150x150"
+              alt="Кошачий корм Cat Energy Pro в зеленой банке болших размеров с фоновым изображением кусочков приготовленной рыбы">
           </a>
           <h3><a class="catalog__title" href="" aria-label="На страницу товара">Cat Energy Pro 1000 г</a></h3>
           <dl class="catalog__index">
@@ -96,7 +103,8 @@
         </li>
         <li class="catalog__item text container">
           <a class="catalog__image" href="blank.html" aria-label="На страницу товара">
-            <img class="catalog__image-product" src="https://via.placeholder.com/150x150" alt="Кошачий корм Cat Energy Pro в синей банке средних размеров с фоновым изображением отварной гречки и помидором">
+            <img class="catalog__image-product" src="https://via.placeholder.com/150x150"
+              alt="Кошачий корм Cat Energy Pro в синей банке средних размеров с фоновым изображением отварной гречки и помидором">
           </a>
           <h3><a class="catalog__title" href="" aria-label="На страницу товара">Cat Energy slim 500 г</a></h3>
           <dl class="catalog__index">
@@ -111,7 +119,8 @@
         </li>
         <li class="catalog__item text container">
           <a class="catalog__image" href="blank.html" aria-label="На страницу товара">
-            <img class="catalog__image-product" src="https://via.placeholder.com/150x150" alt="Кошачий корм Cat Energy Pro в синей банке болших размеров с фоновым изображением отварной гречки и помидором">
+            <img class="catalog__image-product" src="https://via.placeholder.com/150x150"
+              alt="Кошачий корм Cat Energy Pro в синей банке болших размеров с фоновым изображением отварной гречки и помидором">
           </a>
           <h3><a class="catalog__title" href="" aria-label="На страницу товара">Cat Energy slim 1000 г</a></h3>
           <dl class="catalog__index">
@@ -126,7 +135,8 @@
         </li>
         <li class="catalog__item text container">
           <a class="catalog__image" href="blank.html" aria-label="На страницу товара">
-            <img class="catalog__image-product" src="https://via.placeholder.com/150x150" alt="Кошачий корм Cat Energy Pro в фиолетовой банке средних размеров с фоновым изображением отварного риса и зелени">
+            <img class="catalog__image-product" src="https://via.placeholder.com/150x150"
+              alt="Кошачий корм Cat Energy Pro в фиолетовой банке средних размеров с фоновым изображением отварного риса и зелени">
           </a>
           <h3><a class="catalog__title" href="" aria-label="На страницу товара">Cat Energy slim 500 г</a></h3>
           <dl class="catalog__index">
