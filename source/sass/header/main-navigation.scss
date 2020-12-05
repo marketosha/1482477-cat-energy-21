@@ -3,6 +3,12 @@
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .main-navigation__link {
@@ -16,6 +22,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $desktop-width) {
+    color: $black;
+  }
 }
 
 .main-navigation__list {
@@ -24,39 +34,14 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex: 1 0 auto;
     flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .page-header__wrapper {
-    align-self: flex-end;
-    flex-direction: row;
-  }
-
-  .page-header__toggle {
-    display: none;
-  }
-
-  .page-header__container {
-    width: 174px;
-  }
-
-  .main-navigation {
-    align-items: center;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .main-navigation__list {
     flex-direction: row;
     justify-content: space-between;
   }
+}
 
-  .main-navigation__item {
+.main-navigation__item {
+  @media (min-width: $tablet-width) {
     margin-right: 32px;
 
     &:last-child {
@@ -77,14 +62,8 @@
       }
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-navigation__link {
-    color: $black;
-  }
-
-  .main-navigation__item {
+  @media (min-width: $desktop-width) {
     &--active {
       position: relative;
 

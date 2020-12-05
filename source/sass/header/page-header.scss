@@ -18,8 +18,25 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+}
+
+.page-header__wrapper {
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-self: flex-end;
+  }
 }
 
 .page-header__logo {
   height: 38px;
+}
+
+.page-header__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
