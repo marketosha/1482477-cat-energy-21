@@ -3,15 +3,12 @@
   flex-direction: column;
 }
 
-.form fieldset {
-  margin: 0;
-}
-
 .form__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -67,7 +64,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin-right: 10px;
+    margin-right: 75px;
   }
 }
 
@@ -130,6 +127,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 25px;
     width: 570px;
     height: 196px;
   }
