@@ -353,9 +353,13 @@
     height: 2px;
     background-color: $basic_green;
 
-      @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       top: 42px;
       left: 250px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 1000px;
     }
   }
 
@@ -369,6 +373,12 @@
       width: 3000px;
       height: 2px;
       background-color: $basic_green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      right: 1240px;
     }
   }
 }
@@ -390,20 +400,9 @@
   @media (min-width: $tablet-width) {
     width: 631px;
     height: 174px;
-}
-
-@media (min-width: $desktop-width) {
-  .user-comment__label {
-    &::before {
-      right: 1000px;
-    }
-
-    &::after {
-      right: 1240px;
-    }
   }
 
-  .form__user-comment textarea {
+  @media (min-width: $desktop-width) {
     width: 1220px;
   }
 }
