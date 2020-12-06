@@ -343,6 +343,23 @@
   padding-top: 20px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 42px;
+      right: 730px;
+      width: 3000px;
+      height: 2px;
+      background-color: $basic_green;
+
+      @media (min-width: $desktop-width) {
+        right: 1240px;
+      }
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -360,25 +377,6 @@
 
     @media (min-width: $desktop-width) {
       right: 1000px;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 42px;
-      right: 730px;
-      width: 3000px;
-      height: 2px;
-      background-color: $basic_green;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      right: 1240px;
     }
   }
 }
@@ -420,6 +418,22 @@
   font-size: 24px;
   line-height: 26px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 42px;
+      right: 230px;
+      width: 3000px;
+      height: 2px;
+      background-color: $basic_green;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -429,11 +443,27 @@
     top: 33px;
     left: 160px;
     background-color: $basic_green;
+
+    @media (min-width: $tablet-width) {
+      top: 42px;
+      left: 250px;
+    }
   }
 }
 
 .extra-filter__list {
   margin-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .extra-filter__option {
@@ -456,43 +486,6 @@
   display: block;
   position: relative;
   margin-top: 24px;
-}
-
-@media (min-width: $tablet-width) {
-  .extra-filter__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .extra-filter__title {
-    font-size: 36px;
-    line-height: 40px;
-
-    &::before {
-      top: 42px;
-      left: 250px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 42px;
-      right: 230px;
-      width: 3000px;
-      height: 2px;
-      background-color: $basic_green;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .extra-filter__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 
 .filter-checkbox__input + label::before {
@@ -532,11 +525,47 @@
   pointer-events: none;
 }
 
+//filter
+
+.filter-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+}
+
+.filter-description {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
 .filter-button {
   padding: 7px 44px;
   font-size: 16px;
   line-height: 20px;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 81px;
+  }
 
   &:hover,
   &:focus {
