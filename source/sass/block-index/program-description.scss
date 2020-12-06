@@ -27,7 +27,6 @@
   @media (min-width: $desktop-width) {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, 1fr);
-    gap: 37px;
     font-size: 16px;
     line-height: 24px;
   }
