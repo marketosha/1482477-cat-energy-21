@@ -6,6 +6,13 @@
   font-size: 33px;
   line-height: 40px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 64px;
+    color: $black;
+    text-align: justify;
+  }
 }
 
 .program-eat__slogan {
@@ -14,29 +21,20 @@
   text-transform: uppercase;
   text-align: center;
   color: $white;
-}
 
-.program-eat__button {
-  font-size: 14px;
-  line-height: 18px;
-}
-
-@media (min-width: $tablet-width) {
-  .program-eat__title {
-    font-size: 60px;
-    line-height: 64px;
-    color: $black;
-    text-align: justify;
-  }
-
-  .program-eat__slogan {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     color: $black;
     text-align: justify;
   }
+}
 
-  .program-eat__button {
+.program-eat__button {
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
   }

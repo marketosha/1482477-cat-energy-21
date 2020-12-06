@@ -6,14 +6,47 @@
   background-color: $white;
 }
 
+.page-footer__contacts-wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contacts {
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    top: 95px;
+    width: 570px;
+    height: 201px;
+    background-color: $white;
+  }
 }
 
 .contacts__window {
   display: flex;
-  flex-direction: row;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-left: 76px;
+  }
 }
 
 .contacts__title {
@@ -29,43 +62,14 @@
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
-}
 
-@media (min-width: $tablet-width) {
-  .contacts__window {
-    justify-content: space-between;
-  }
-
-  .contacts__text {
-    width: 320px;
+  @media (min-width: $tablet-width) {
+    width: $mobile-width;
     padding-left: 150px;
     text-align: right;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-footer__contacts-wrapper {
-    position: relative;
-    width: 1220px;
-    margin: 0 auto;
-  }
-
-  .contacts__window {
-    padding-top: 66px;
-    padding-left: 76px;
-    justify-content: space-between;
-  }
-
-  .contacts {
-    display: block;
-    position: absolute;
-    top: 95px;
-    width: 570px;
-    height: 201px;
-    background-color: $white;
-  }
-
-  .contacts__text {
+  @media (min-width: $desktop-width) {
     align-items: center;
     text-align: left;
   }
@@ -81,6 +85,12 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.social__item {
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }
 
 .social__icon {
@@ -104,26 +114,14 @@
   &:focus {
     color: $black-opacity-30;
   }
+
+
+@media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .copyright__text-design {
   text-transform: uppercase;
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .social__item {
-    margin-right: 20px;
-  }
-
-  .copyright__link {
-    display: flex;
-    align-items: center;
-  }
 }
