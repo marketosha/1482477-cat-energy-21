@@ -1,12 +1,25 @@
+.program-version {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .program-version__type {
+  margin-bottom: 20px;
   height: 100%;
   background-color: $basic_grey;
 }
 
 .program-type {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   position: relative;
-  margin-top: 22px;
-  margin-bottom: 20px;
 }
 
 .program-version__title {
@@ -44,6 +57,11 @@
   line-height: 18px;
   color: $special_dark-grey;
   border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .program-version__button {

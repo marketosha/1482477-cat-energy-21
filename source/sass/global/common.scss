@@ -12,7 +12,20 @@
 }
 
 .container {
-  padding: 0 calc(50% - 140px);
+  --content-area: 320px;
+  --container-padding: calc((var(--content-area)) / 2);
+  --content-area-padding: 20px;
+  padding: 0 calc(50% - var(--container-padding) + var(--content-area-padding));
+
+  @media (min-width: $tablet-width) {
+    --content-area: 768px;
+    --content-area-padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    --content-area: 1440px;
+    --content-area-padding: 110px;
+  }
 }
 
 .list {
@@ -52,6 +65,15 @@
 
   &:active {
     color: $white-opacity-30;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    padding: 14px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
   }
 }
 

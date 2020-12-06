@@ -2,13 +2,36 @@
   margin-bottom: 38px;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-description__list {
+  display: grid;
+  grid-template-columns: 1fr;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    gap: 37px;
+    height: 280px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .program-description__item {
+  position: relative;
   width: 198px;
   height: 54px;
   margin-left: 80px;
@@ -17,13 +40,22 @@
   line-height: 18px;
   color: $special_dark-grey;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
     box-sizing: border-box;
-    left: 5px;
+    left: -80px;
     width: 60px;
     height: 60px;
+
+    @media (min-width: $tablet-width) {
+      top: -65px;
+      left: 0;
+    }
   }
 
   &--nutritional::before {
