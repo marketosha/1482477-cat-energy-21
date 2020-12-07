@@ -73,6 +73,10 @@
   width: 100%;
   height: 362px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 // Footer-logo, social
@@ -103,8 +107,8 @@
   flex-wrap: wrap;
   padding-top: 22px;
   padding-bottom: 23px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: $border-line-grey;
+  border-bottom: $border-line-grey;
 
   @media (min-width: $tablet-width) {
     border: none;
