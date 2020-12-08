@@ -1,0 +1,55 @@
+.form__main-user {
+  margin-top: 39px;
+  margin-bottom: 24px;
+  font-family: inherit;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-right: 75px;
+  }
+}
+
+.main-user__name {
+  width: 228px;
+
+  @media (min-width: $tablet-width) {
+    width: 567px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 506px;
+  }
+}
+
+.main-user__weight {
+  margin-left: 15px;
+  width: 191px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    width: 536px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
+}
+
+.main-user__age {
+  width: 172px;
+
+  @media (min-width: $tablet-width) {
+    width: 497px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}

@@ -87,13 +87,14 @@
 }
 
 .border-title {
+  display: inline;
   position: relative;
+  padding-right: 30px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    display: block;
     width: 100vw;
     height: 2px;
   }
@@ -117,7 +118,7 @@
     }
 
     &::after {
-      top: 23px;
+      top: 20px;
     }
   }
 }
