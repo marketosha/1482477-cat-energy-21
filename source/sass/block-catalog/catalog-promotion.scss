@@ -1,0 +1,41 @@
+.catalog-promotion {
+  position: relative;
+ margin-bottom: 35px;
+  width: 280px;
+  height: 289px;
+  background-image: url("../img/gift_cat.png");
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+  }
+}
+
+.catalog-promotion__slogan {
+  padding-top: 186px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    top: 55px;
+    left: 100px;
+    background-image: url("../img/gift_catalog.svg");
+  }
+
+    @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 708px;
+    height: 200px;
+  }
+}
