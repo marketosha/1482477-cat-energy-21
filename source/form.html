@@ -38,7 +38,7 @@
     <form class="form indents-to-zero" method="post" action="https://echo.htmlacademy.ru">
       <div class="form__wrapper">
         <div class="form__main-user-wrapper container">
-          <fieldset class="form__main-user main-user form-border container">
+          <fieldset class="form__main-user main-user form-border fieldset-indent container">
             <h2 class="visually-hidden">Информация о коте</h2>
             <p>
               <label for="cat-name">Имя:*</label>
@@ -56,29 +56,29 @@
           </fieldset>
         </div>
         <div class="form__program-border-wrapper container">
-          <fieldset class="form__program-filter filter">
+          <fieldset class="form__program-filter filter indents-to-zero">
             <legend class="visually-hidden">Выбор программы</legend>
             <ul class="list">
-              <li class="filter__option filter-radio">
+              <li class="filter__item filter-option filter-radio">
                 <input class="filter-radio__input visually-hidden" type="radio" name="program-eat" value="slim"
                   id="filter__slim" checked>
-                <label for="filter__slim">Похудение</label>
+                <label class="filter__item filter-label filter-label--radio" for="filter__slim">Похудение</label>
               </li>
-              <li class="filter__option filter-radio">
+              <li class="filter__item filter-option  filter-radio">
                 <input class="filter-radio__input visually-hidden" type="radio" name="program-eat" value="fat"
                   id="filter__fat">
-                <label for="filter__fat">Набор массы</label>
+                <label class="filter-label filter-label--radio" for="filter__fat">Набор массы</label>
               </li>
-              <li class="filter__option filter-radio">
+              <li class="filter__item filter-option  filter-radio">
                 <input class="filter-radio__input visually-hidden" type="radio" name="program-eat" value="advice"
                   id="filter__advice">
-                <label for="filter__advice">Не знаю (Нужен ваш совет)</label>
+                <label class="filter-label filter-label--radio" for="filter__advice">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
         </div>
       </div>
-      <fieldset class="form__contact-user contact-user form-border container">
+      <fieldset class="form__contact-user contact-user form-border fieldset-indent container">
         <h2 class="contact-user__title title border-title">Контактные данные
           (владельца кота)</h2>
         <div class="contact-user__description-wrapper">
@@ -95,37 +95,35 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="form__user-comment user-comment form-border container">
+      <fieldset class="form__user-comment user-comment form-border fieldset-indent container">
         <div>
-
           <label class="user-comment__label border-title" for="comment-text">Комментарий</label>
         </div>
-
         <textarea name="user-comment__text" id="comment-text" rows="10"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="form__extra-filter extra-filter form-border container">
+      <fieldset class="form__extra-filter extra-filter form-border fieldset-indent container">
         <legend class="extra-filter__title border-title">Дополнительно</legend>
         <ul class="extra-filter__list list">
-          <li class="extra-filter__option filter-checkbox">
-            <input class="filter-checkbox__input filter-input visually-hidden" type="checkbox" name="extra-suger"
-              value="suger" id="extra-filter__suger" checked>
-            <label for="extra-filter__suger">Сахарозаменитель</label>
+          <li class="extra-filter__item  filter-option filter-checkbox">
+            <input class="filter-checkbox__input visually-hidden" type="checkbox" name="extra-suger" value="suger"
+              id="extra-filter__suger" checked>
+            <label class="filter-label filter-label--checkbox" for="extra-filter__suger">Сахарозаменитель</label>
           </li>
-          <li class="extra-filter__option filter-checkbox">
-            <input class="filter-checkbox__input filter-input visually-hidden" type="checkbox" name="extra-water"
-              value="water" id="extra-filter__water">
-            <label for="extra-filter__water">Питьевая вода</label>
+          <li class="extra-filter__item filter-option filter-checkbox">
+            <input class="filter-checkbox__input visually-hidden" type="checkbox" name="extra-water" value="water"
+              id="extra-filter__water">
+            <label class="filter-label filter-label--checkbox" for="extra-filter__water">Питьевая вода</label>
           </li>
-          <li class="extra-filter__option filter-checkbox">
-            <input class="filter-checkbox__input filter-input visually-hidden" type="checkbox" name="extra-milk"
-              value="milk" id="extra-filter__milk">
-            <label for="extra-filter__milk">Молоко</label>
+          <li class="extra-filter__item filter-option filter-checkbox">
+            <input class="filter-checkbox__input visually-hidden" type="checkbox" name="extra-milk" value="milk"
+              id="extra-filter__milk">
+            <label class="filter-label filter-label--checkbox" for="extra-filter__milk">Молоко</label>
           </li>
-          <li class="extra-filter__option filter-checkbox">
+          <li class="extra-filter__item filter-option filter-checkbox">
             <input class="filter-checkbox__input filter-input visually-hidden" type="checkbox" name="extra-vitamins"
               value="vitamins" id="extra-filter__vitamins">
-            <label for="extra-filter__vitamins">Витамины</label>
+            <label class="filter-label filter-label--checkbox" for="extra-filter__vitamins">Витамины</label>
           </li>
         </ul>
       </fieldset>

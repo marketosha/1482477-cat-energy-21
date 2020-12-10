@@ -55,27 +55,3 @@
   color: $special_dark-grey;
   border: $border-input-hover;
 }
-
-.contact-mail {
-  width: 219px;
-
-  @media (min-width: $tablet-width) {
-    width: 551px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 486px;
-  }
-}
-
-.contact-tel {
-  width: 204px;
-
-  @media (min-width: $tablet-width) {
-    width: 535px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 472px;
-  }
-}

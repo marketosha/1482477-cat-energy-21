@@ -1,0 +1,11 @@
+.contact-mail {
+  width: 219px;
+
+  @media (min-width: $tablet-width) {
+    width: 551px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 486px;
+  }
+}

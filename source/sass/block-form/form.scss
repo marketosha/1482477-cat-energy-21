@@ -57,3 +57,21 @@
     border: none;
   }
 }
+
+.form__main-user {
+  margin-top: 39px;
+  margin-bottom: 24px;
+  font-family: inherit;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-right: 75px;
+  }
+}

@@ -1,0 +1,11 @@
+.contact-tel {
+  width: 204px;
+
+  @media (min-width: $tablet-width) {
+    width: 535px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 472px;
+  }
+}

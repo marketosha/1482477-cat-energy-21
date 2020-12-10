@@ -1,0 +1,10 @@
+.filter-radio__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -37px;
+  width: 14px;
+  height: 14px;
+  background-color: $basic_green;
+  border-radius: 50%;
+}
