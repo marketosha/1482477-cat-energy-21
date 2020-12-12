@@ -61,12 +61,8 @@
 .form__main-user {
   margin-top: 39px;
   margin-bottom: 24px;
-  font-family: inherit;
-  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
     margin: 0;
   }
 
@@ -74,4 +70,15 @@
     width: 570px;
     margin-right: 75px;
   }
+}
+
+.form__program-filter {
+  @media (min-width: $tablet-width) {
+    margin-top: 72px;
+    margin-bottom: 75px;
+  }
+
+   @media (min-width: $desktop-width) {
+     margin: 0;
+   }
 }

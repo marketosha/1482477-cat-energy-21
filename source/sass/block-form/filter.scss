@@ -2,12 +2,11 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    width: 620px;
+    padding-left: 30px;
     border: $border-input-grey;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 25px;
     width: 570px;
     height: 196px;
   }
