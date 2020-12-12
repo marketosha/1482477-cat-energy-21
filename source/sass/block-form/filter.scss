@@ -65,7 +65,6 @@
   &::after {
     content: "";
     position: absolute;
-
   }
 
   &--radio::after {
@@ -78,7 +77,7 @@
   }
 
   &--checkbox::after {
-        left: 6px;
+    left: 6px;
     top: 7px;
     width: 16px;
     height: 8px;
