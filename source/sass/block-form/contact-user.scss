@@ -1,12 +1,19 @@
 .contact-user {
   position: relative;
   overflow: hidden;
-  margin-bottom: 23px;
+  margin-top: 26px;
 }
 
 .contact-user__description-wrapper {
   display: flex;
   flex-direction: column;
+  margin-top: 35px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 76px;
+    margin-bottom: 65px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -27,24 +34,11 @@
 
 .contact-user__description {
   display: flex;
-  margin-top: 10px;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
-  }
-}
-
-.contact-user__label {
-  font-size: 16px;
-  line-height: 18px;
-  color: $special_dark-grey;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
   }
 }
 
@@ -54,28 +48,4 @@
   font-family: inherit;
   color: $special_dark-grey;
   border: $border-input-hover;
-}
-
-.contact-mail {
-  width: 219px;
-
-  @media (min-width: $tablet-width) {
-    width: 551px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 486px;
-  }
-}
-
-.contact-tel {
-  width: 204px;
-
-  @media (min-width: $tablet-width) {
-    width: 535px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 472px;
-  }
 }

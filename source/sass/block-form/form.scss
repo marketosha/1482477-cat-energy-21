@@ -57,3 +57,28 @@
     border: none;
   }
 }
+
+.form__main-user {
+  margin-top: 39px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-right: 75px;
+  }
+}
+
+.form__program-filter {
+  @media (min-width: $tablet-width) {
+    margin-top: 72px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
