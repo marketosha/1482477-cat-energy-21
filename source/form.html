@@ -3,136 +3,156 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="page-header container">
-    <a class="page-header__logo" aria-label="На главную">
-      <img src="https://via.placeholder.com/150x150" alt="Логотип CatEnergy">
-    </a>
+    <div class="page-header__container">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" height="38" alt="Логотип CatEnergy">
+      </a>
+      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+    </div>
     <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="main-navigation__list list">
         <li class="main-navigation__item">
-          <a href="index.html">Главная</a>
+          <a class="main-navigation__link" href="index.html">Главная</a>
         </li>
         <li class="main-navigation__item">
-          <a href="catalog.html">Каталог продукции</a>
+          <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-navigation__item main-navigation__item--active">
-          <a>Подбор программы</a>
+          <a class="main-navigation__link">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="page-main title">
+  <main class="page-main page-main--form title">
     <div class="page-main__wrapper container">
-      <h1 class="page-main__title">Подбор программы</h1>
+      <h1 class="page-main__title indents-to-zero">Подбор программы</h1>
       <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
     <form class="form indents-to-zero" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="form__main-user main-user form-border container">
-        <h2 class="visually-hidden">Информация о коте</h2>
-        <p>
-          <label for="cat-name">Имя:*</label>
-          <input class="main-user__name title" id="cat-name" type="text" name="name-cat" placeholder="Барсик" required>
-        </p>
-        <p>
-          <label for="cat-weight">Вес (кг):*</label>
-          <input class="main-user__weight" id="cat-weight" type="text" name="weight-cat" placeholder="7" required>
-        </p>
-        <p>
-          <label for="cat-age">Возраст (лет):</label>
-          <input class="main-user__age" id="cat-age" type="text" name="age-cat" placeholder="7">
-        </p>
+      <div class="form__wrapper">
+        <div class="form__main-user-wrapper container">
+          <fieldset class="form__main-user main-user form-info form-border fieldset-indent container">
+            <h2 class="visually-hidden">Информация о коте</h2>
+            <p class="form-info__description indents-to-zero ">
+              <label class="form-info__label" for="cat-name">Имя:*</label>
+              <input class="form-info__input title" id="cat-name" type="text" name="name-cat" placeholder="Барсик"
+                required>
+            </p>
+            <p class="form-info__description indents-to-zero ">
+              <label class="form-info__label" for="cat-weight">Вес (кг):*</label>
+              <input class="form-info__input" id="cat-weight" type="text" name="weight-cat" placeholder="7" required>
+            </p>
+            <p class="form-info__description indents-to-zero ">
+              <label class="form-info__label" for="cat-age">Возраст (лет):</label>
+              <input class="form-info__input" id="cat-age" type="text" name="age-cat" placeholder="7">
+            </p>
+          </fieldset>
+        </div>
+        <div class="form__program-border-wrapper container">
+          <fieldset class="form__program-filter form-border indents-to-zero">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <ul class="list filter">
+              <li class="filter__item">
+                <input class="filter__input visually-hidden" type="radio" name="program-eat" value="slim"
+                  id="filter__slim" checked>
+                <label class="filter__label filter__label--radio" for="filter__slim">Похудение</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__input visually-hidden" type="radio" name="program-eat" value="fat"
+                  id="filter__fat">
+                <label class="filter__label filter__label--radio" for="filter__fat">Набор массы</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__input visually-hidden" type="radio" name="program-eat" value="advice"
+                  id="filter__advice">
+                <label class="filter__label filter__label--radio" for="filter__advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </div>
+      <fieldset class="form__contact-user contact-user form-border fieldset-indent container">
+        <h2 class="contact-user__title title border-title">Контактные данные
+          (владельца кота)</h2>
+        <div class="contact-user__description-wrapper">
+          <div class="form-info__description form-info__description--contact">
+            <label class="form-info__label" for="contact-mail">E-mail:*</label>
+            <input class="form-info__input" id="contact-mail" type="email" name="mail-user"
+              placeholder="kuklachev@gmail.com" required>
+          </div>
+          <div class="form-info__description form-info__description--contact">
+            <label class="form-info__label" for="contact-tel">Телефон:*</label>
+            <input class="form-info__input" type="tel" id="contact-tel" name="phone_number"
+              placeholder="8 (960) 900-60-90"
+              pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
+          </div>
+        </div>
       </fieldset>
-      <fieldset class="form__program-filter filter container">
-        <legend class="visually-hidden">Выбор программы</legend>
-        <ul class="list">
-          <li class="filter__option filter-radio">
-            <input class="filter-radio__input visually-hidden" type="radio" name="program-eat" value="slim"
-              id="filter__slim" checked>
-            <label for="filter__slim">Похудение</label>
-          </li>
-          <li class="filter__option filter-radio">
-            <input class="filter-radio__input visually-hidden" type="radio" name="program-eat" value="fat"
-              id="filter__fat">
-            <label for="filter__fat">Набор массы</label>
-          </li>
-          <li class="filter__option filter-radio">
-            <input class="filter-radio__input visually-hidden" type="radio" name="program-eat" value="advice"
-              id="filter__advice">
-            <label for="filter__advice">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__contact-user contact-user form-border container">
-        <h2 class="contact-user__title title">Контактные данные (владельца кота)</h2>
-        <p>
-          <label class="contact-user__label" for="contact-mail">E-mail:*</label>
-          <input class="contact-user__input contact-mail" id="contact-mail" type="email" name="mail-user"
-            placeholder="kuklachev@gmail.com" required>
-        </p>
-        <p>
-          <label class="contact-user__label" for="contact-tel">Телефон:*</label>
-          <input class="contact-user__input contact-tel" type="tel" id="contact-tel" name="phone_number"
-            placeholder="8 (960) 900-60-90" pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-            required>
-        </p>
-      </fieldset>
-      <fieldset class="form__user-comment user-comment form-border container">
-        <label for="comment-text">Комментарий</label>
+      <fieldset class="form__user-comment user-comment form-border fieldset-indent container">
+        <div>
+          <label class="user-comment__label border-title" for="comment-text">Комментарий</label>
+        </div>
         <textarea name="user-comment__text" id="comment-text" rows="10"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="form__extra-filter extra-filter form-border container">
-        <legend class="extra-filter__title extra-filter__title">Дополнительно</legend>
+      <fieldset class="form__extra-filter extra-filter form-border fieldset-indent container">
+        <legend class="extra-filter__title border-title">Дополнительно</legend>
         <ul class="extra-filter__list list">
-          <li class="extra-filter__option filter-checkbox">
-            <input class="filter-checkbox__input filter-input visually-hidden" type="checkbox" name="extra-suger"
-              value="suger" id="extra-filter__suger" checked>
-            <label for="extra-filter__suger">Сахарозаменитель</label>
+          <li class="filter__item">
+            <input class="filter__input visually-hidden" type="checkbox" name="extra-suger" value="suger"
+              id="extra-filter__suger" checked>
+            <label class="filter__label filter__label--checkbox" for="extra-filter__suger">Сахарозаменитель</label>
           </li>
-          <li class="extra-filter__option filter-checkbox">
-            <input class="filter-checkbox__input filter-input visually-hidden" type="checkbox" name="extra-water"
-              value="water" id="extra-filter__water">
-            <label for="extra-filter__water">Питьевая вода</label>
+          <li class="filter__item">
+            <input class="filter__input visually-hidden" type="checkbox" name="extra-water" value="water"
+              id="extra-filter__water">
+            <label class="filter__label filter__label--checkbox" for="extra-filter__water">Питьевая вода</label>
           </li>
-          <li class="extra-filter__option filter-checkbox">
-            <input class="filter-checkbox__input filter-input visually-hidden" type="checkbox" name="extra-milk"
-              value="milk" id="extra-filter__milk">
-            <label for="extra-filter__milk">Молоко</label>
+          <li class="filter__item">
+            <input class="filter__input visually-hidden" type="checkbox" name="extra-milk" value="milk"
+              id="extra-filter__milk">
+            <label class="filter__label filter__label--checkbox" for="extra-filter__milk">Молоко</label>
           </li>
-          <li class="extra-filter__option filter-checkbox">
-            <input class="filter-checkbox__input filter-input visually-hidden" type="checkbox" name="extra-vitamins"
+          <li class="filter__item">
+            <input class="filter__input filter-input visually-hidden" type="checkbox" name="extra-vitamins"
               value="vitamins" id="extra-filter__vitamins">
-            <label for="extra-filter__vitamins">Витамины</label>
+            <label class="filter__label filter__label--checkbox" for="extra-filter__vitamins">Витамины</label>
           </li>
         </ul>
       </fieldset>
-      <div class="container">
-        <button class="filter-button button form-fieldset" type="submit">Отправить заявку</button>
+      <div class="filter-wrapper container">
+        <button class="filter-button button" type="submit">Отправить заявку</button>
         <p class="filter-description text">* — Обязательные поля</p>
       </div>
     </form>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__contacts contacts container">
+    <header>
       <h2 class="visually-hidden">Адрес Кэт Энерджи</h2>
-      <b class="contacts__title title">Приглашаем к сотрудничеству дилеров!</b>
-      <address class="contacts__text text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-    </section>
-    <div class="page-footer__map">
+      <div class="page-footer__contacts-wrapper page-footer__contacts-wrapper--grey">
+        <section class="page-footer__contacts contacts ">
+          <div class="contacts__window contacts__window--grey container">
+            <b class="contacts__title title">Приглашаем к сотрудничеству дилеров!</b>
+            <address class="contacts__text text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
+        </section>
+      </div>
       <iframe class="footer-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603034823112!5m2!1sru!2sru"
         allowfullscreen title="Офис компании Кэт Энерджи по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </iframe>
-    </div>
-    <div class="container">
+      </div>
+    </header>
+    <div class="page-footer__wrapper container">
       <div class="page-footer__logo">
-        <img src="https://via.placeholder.com/150x150" alt="">
+        <img src="https://via.placeholder.com/150x150" width="128" height="24" alt="">
       </div>
       <section class="page-footer__social social">
         <h2 class="visually-hidden">Давайте дружить</h2>
@@ -170,8 +190,9 @@
       </section>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="copyright__text-design">Html</span> Academy
-          <img class="copyright__image" src="https://via.placeholder.com/150x150" alt="">
+          <p class="copyright__text"><span class="copyright__text-design">Html</span> Academy</p>
+          <img class="copyright__image" src="https://via.placeholder.com/150x150" width="27" heigth="34"
+            alt="Логотип разработчика сайта HTML Academy">
         </a>
       </div>
     </div>

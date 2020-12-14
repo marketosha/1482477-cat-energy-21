@@ -1,5 +1,19 @@
+.page-main--form .container {
+  overflow-x: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 39px;
+  }
+}
+
 .page-main__wrapper {
-  border-top: 1px solid $border-grey;
+  display: flex;
+  flex-direction: column;
+  border-top: $border-line-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .page-main__catalog-title {
@@ -10,6 +24,12 @@
   margin-top: 27px;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 64px;
+  }
 }
 
 .page-main__text {
@@ -17,4 +37,10 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 54px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

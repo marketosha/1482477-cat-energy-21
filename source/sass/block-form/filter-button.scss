@@ -1,0 +1,13 @@
+.filter-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 81px;
+  }
+}

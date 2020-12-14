@@ -1,0 +1,38 @@
+.form-info__description {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--contact {
+      margin-right: 30px;
+      margin-bottom: 0;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+    }
+  }
+}
+
+.form-info__input {
+  width: 100%;
+  flex-shrink: 5000;
+}
+
+.form-info__label {
+  margin-right: 14px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

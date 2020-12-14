@@ -26,3 +26,12 @@ $white-opacity-30: rgba(#ffffff, 0.3);
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
+
+//border
+
+$border-input-grey: 1px solid $lighter-grey;
+$border-input-hover: 1px solid $darker-grey;
+$border-input-active: 2px solid $special_dark-grey;
+$border-input-disabled: 2px solid $red;
+$border-line-grey: 1px solid $border-grey;
+$border-line-green: 2px solid $basic_green;
