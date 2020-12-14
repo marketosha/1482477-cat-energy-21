@@ -1,12 +1,12 @@
 .catalog__list {
-  border-top: $border-line-ligter-grey;
+  border-top: $border-line-lighter-grey;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 140px;
     column-gap: 60px;
-    margin: 0 auto;
+    margin: 0 auto 68px auto;
     width: max-content;
     border: none;
   }
@@ -14,11 +14,12 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
+    margin: 0 auto 72px auto;
   }
 }
 
 .catalog__item {
-  border-bottom: 1px solid $border-lighter-grey;
+  border-bottom: $border-line-lighter-grey;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -34,13 +35,12 @@
     display: flex;
     flex-direction: column;
     padding: 0 38px;
-    width: 324px;
     background-color: $basic_grey;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: 245px;
+    max-width: 245px;
   }
 }
 
@@ -75,6 +75,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
   }
 }
 
@@ -103,24 +104,5 @@
 .catalog__button {
   grid-row: 3/4;
   grid-column: 1/3;
-  width: 100%;
   margin-bottom: 14px;
-  color: $white;
-
-  @media (min-width: $tablet-width) {
-    width: 248px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 168px;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: $darker-green;
-  }
-
-  &:active {
-    color: $white-opacity-30;
-  }
 }

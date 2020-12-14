@@ -1,23 +1,30 @@
 .catalog-promotion {
   position: relative;
- margin-bottom: 35px;
+  margin-bottom: 35px;
   width: 280px;
   height: 289px;
   background-image: url("../img/gift_cat.png");
 
   @media (min-width: $tablet-width) {
+    margin-top: 69px;
+    margin-bottom: 79px;
     width: 708px;
     height: 200px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 86px;
     width: 245px;
     height: 289px;
   }
 }
 
 .catalog-promotion__slogan {
-  padding-top: 186px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
   color: $white;
@@ -25,17 +32,27 @@
 
   &::before {
     content: "";
-    position: absolute;
+    display: block;
+    margin-top: 58px;
+    margin-bottom: 48px;
     width: 78px;
     height: 80px;
-    top: 55px;
-    left: 100px;
     background-image: url("../img/gift_catalog.svg");
   }
 
-    @media (min-width: $tablet-width) {
-    margin: 0;
-    width: 708px;
-    height: 200px;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 78px;
+    padding-right: 149px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    padding-right: 0;
   }
 }
