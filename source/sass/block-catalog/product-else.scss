@@ -1,5 +1,20 @@
 .product-else {
-  border-bottom: 1px solid $border-grey;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 35px;
+    max-width: 324px;
+    min-height: 429px;
+    border: $border-input-hover;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+  }
 }
 
 .product-else__title {
@@ -15,7 +30,7 @@
     content: "";
     position: absolute;
     top: 35px;
-    left: 90px;
+    left: 140px;
     width: 30px;
     height: 2px;
     background-color: $grey;
@@ -24,18 +39,42 @@
   &::after {
     transform: rotate(90deg);
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 109px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &::before,
+    &::after {
+      width: 60px;
+      left: 100px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before,
+    &::after {
+      left: 50px;
+    }
+  }
 }
 
 .product-else__description {
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .product-else__button {
-  margin-bottom: 5px;
-  height: 60px;
-  padding: 20px 94px;
+  margin-bottom: 25px;
+  padding: 10px;
+  font-size: 16px;
   color: $special_dark-grey;
   background-color: $basic_grey;
 }
