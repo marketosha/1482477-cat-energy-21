@@ -9,8 +9,8 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header container">
-    <div class="page-header__container">
+  <header class="page-header center--menu">
+    <div class="page-header__container center">
       <a class="page-header__logo">
         <img src="https://via.placeholder.com/150x150" height="38" alt="Логотип CatEnergy">
       </a>
@@ -18,6 +18,7 @@
         <button class="page-header__toogle form-border" class="page-header__toggle" type="button"
           aria-label="Открыть меню"></button>
       </div>
+
     </div>
     <nav class="main-navigation page-header--closed">
       <ul class="main-navigation__list main-navigation__list--mobile list ">
@@ -35,11 +36,18 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Кэт Энерджи - питание для котов</h1>
-    <section class="program-eat container">
-      <h2 class="program-eat__title title title--white">Функциональное<br>питание для котов</h2>
-      <p class="program-eat__slogan indents-to-zero">Занялся собой? Займись котом!</p>
-      <img class="program-eat__image" src="https://via.placeholder.com/150x150" width="280" height="270" alt="Банка корма Кэт Энерджи Про со вкусом курицы">
-      <a class="program-eat__button button" href="form.html">Подобрать программу</a>
+    <section class="program-eat">
+      <div class="program-eat__content-wrapper">
+        <div class="program-eat__content container">
+          <h2 class="program-eat__title title title--white">Функциональное<br>питание для котов</h2>
+          <p class="program-eat__slogan indents-to-zero">Занялся собой? Займись котом!</p>
+        </div>
+      </div>
+      <div class="program-eat__wrapper container">
+        <img class="program-eat__image" src="https://via.placeholder.com/150x150" width="280" height="270"
+          alt="Банка корма Кэт Энерджи Про со вкусом курицы">
+        <a class="program-eat__button button" href="form.html">Подобрать программу</a>
+      </div>
     </section>
     <section class="program-version container">
       <h2 class="visually-hidden">Варианты программ питания</h2>
@@ -49,7 +57,7 @@
           способность лазить по
           деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="program-version__button" href="blank.html">Каталог slim
-          <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="program-version__button-image" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
             <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
           </svg>
@@ -62,7 +70,7 @@
           Energy
           Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="program-version__button" href="blank.html">Каталог pro
-          <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="program-version__button-image" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
             <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
           </svg>

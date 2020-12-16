@@ -49,15 +49,16 @@
 
 .main-navigation__item {
   position: relative;
-  padding-top: 34px;
+  padding-top: 18px;
   padding-bottom: 8px;
+  margin-top: 15px;
   text-align: center;
+  border-top: $border-menu;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0px;
     padding-top: 0;
     margin-right: 32px;
-
 
     &:last-child {
       margin-right: 0;

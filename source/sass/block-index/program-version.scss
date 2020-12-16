@@ -23,19 +23,22 @@
 }
 
 .program-version__title {
-  position: relative;
+
+
   padding-top: 30px;
   font-size: 24px;
   line-height: 37px;
-  margin-left: 100px;
+
+  text-transform: uppercase;
 
   &::before {
     content: "";
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     top: 21px;
-    left: -80px;
-    height: 50px;
+    left: -69px;
+    height: 53px;
   }
 
   &--sliming::before {
@@ -52,9 +55,11 @@
 }
 
 .program-version__description {
-  padding: 29px 33px 23px 20px;
+  margin-top: 29px;
+ padding-left: 20px;
+  padding-right: 17px;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 19px;
   color: $special_dark-grey;
   border-bottom: 1px solid $border-grey;
 
@@ -65,9 +70,9 @@
 }
 
 .program-version__button {
-  display: block;
-  position: relative;
-  padding: 19px 0 22px 20px;
+  display: flex;
+  align-items: center;
+  padding: 18px 0 19px 20px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -77,4 +82,8 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.program-version__button-image {
+     margin-left: 15px;
 }

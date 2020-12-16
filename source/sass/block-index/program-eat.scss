@@ -1,5 +1,14 @@
 .program-eat {
-  background-color: $green;
+  position: relative;
+}
+
+.program-eat__content-wrapper {
+  background-image: linear-gradient($green, $green),
+    url("../img/cat_background.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 302px;
+  width: 100%;
 }
 
 .program-eat__title {
@@ -32,13 +41,21 @@
   }
 }
 
+.program-eat__wrapper {
+  position: relative;
+  display: flex;
+  margin-bottom: 22px;
+}
+
 .program-eat__image {
-  margin-top: 15px;
+  position: absolute;
+  top: -160px;
 }
 
 .program-eat__button {
   font-size: 14px;
   line-height: 18px;
+  margin-top: 138px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
