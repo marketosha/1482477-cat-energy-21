@@ -9,25 +9,30 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header page-header__wrapper container">
-    <div class="page-header__container">
+  <header class="page-header page-header__wrapper">
+    <div class="page-header__container container">
       <a class="page-header__logo">
         <img src="https://via.placeholder.com/150x150" height="38" alt="Логотип CatEnergy">
       </a>
-      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+      <div class="page-header__button-wrapper container page-header--closed main-navigation--nojs">
+        <button class="page-header__toogle form-border" class="page-header__toggle" type="button"
+          aria-label="Открыть меню"></button>
+      </div>
     </div>
-    <nav class="main-navigation">
-      <ul class="main-navigation__list list">
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link main-navigation__item--active">Каталог продукции</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
+    <nav class="main-navigation page-header--closed">
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link main-navigation__item--active">Каталог продукции</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="page-main">
@@ -277,6 +282,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/navigation.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-width) {
     align-items: center;
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
   }
@@ -23,6 +24,10 @@
     opacity: 0.3;
   }
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
+
   @media (min-width: $desktop-width) {
     color: $black;
   }
@@ -32,16 +37,27 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 500px;
   }
 }
 
 .main-navigation__item {
+  position: relative;
+  padding-top: 34px;
+  padding-bottom: 8px;
+  text-align: center;
+
   @media (min-width: $tablet-width) {
+    padding-bottom: 0px;
+    padding-top: 0;
     margin-right: 32px;
+
 
     &:last-child {
       margin-right: 0;
@@ -54,7 +70,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: -10px;
+        bottom: 0;
         left: 0;
         height: 2px;
         background: $basic_green;

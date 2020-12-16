@@ -14,17 +14,20 @@
       <a class="page-header__logo">
         <img src="https://via.placeholder.com/150x150" height="38" alt="Логотип CatEnergy">
       </a>
-      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+      <div class="page-header__button-wrapper page-header--closed main-navigation--nojs">
+        <button class="page-header__toogle form-border" class="page-header__toggle" type="button"
+          aria-label="Открыть меню"></button>
+      </div>
     </div>
-    <nav class="main-navigation">
-      <ul class="main-navigation__list list">
-        <li class="main-navigation__item main-navigation__item--active main-navigation__item--active-white">
-          <a class="main-navigation__link">Главная</a>
+    <nav class="main-navigation page-header--closed">
+      <ul class="main-navigation__list main-navigation__list--mobile list ">
+        <li class="main-navigation__item container">
+          <a class="main-navigation__link main-navigation__item--active">Главная</a>
         </li>
-        <li class="main-navigation__item">
+        <li class="main-navigation__item container">
           <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="main-navigation__item">
+        <li class="main-navigation__item container">
           <a class="main-navigation__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
@@ -34,8 +37,8 @@
     <h1 class="visually-hidden">Кэт Энерджи - питание для котов</h1>
     <section class="program-eat container">
       <h2 class="program-eat__title title title--white">Функциональное<br>питание для котов</h2>
-      <p class="program-eat__slogan">Занялся собой? Займись котом!</p>
-      <img src="https://via.placeholder.com/150x150" alt="blank.html">
+      <p class="program-eat__slogan indents-to-zero">Занялся собой? Займись котом!</p>
+      <img class="program-eat__image" src="https://via.placeholder.com/150x150" width="280" height="270" alt="Банка корма Кэт Энерджи Про со вкусом курицы">
       <a class="program-eat__button button" href="form.html">Подобрать программу</a>
     </section>
     <section class="program-version container">
@@ -192,6 +195,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/navigation.js"></script>
 </body>
 
 </html>
