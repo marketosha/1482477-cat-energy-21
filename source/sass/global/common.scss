@@ -28,6 +28,23 @@
   }
 }
 
+.center {
+  padding: 0 calc(50% - 140px);
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  &--menu {
+    @media (min-width: $tablet-width) {
+      padding: 0 calc(50% - 354px);
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 calc(50% - 610px);
+    }
+  }
+}
 //style
 
 .list {

@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
   min-height: 302px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .program-eat__title {
@@ -22,6 +26,8 @@
     line-height: 64px;
     color: $black;
     text-align: justify;
+    padding-top: 57px;
+    padding-left: 88px;
   }
 }
 
@@ -34,6 +40,8 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
+    margin-top: 33px;
+    padding-left: 88px;
     font-size: 20px;
     line-height: 24px;
     color: $black;
@@ -43,13 +51,24 @@
 
 .program-eat__wrapper {
   position: relative;
-  display: flex;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+    min-height: 572px;
+  }
 }
 
 .program-eat__image {
   position: absolute;
-  top: -160px;
+  top: -286px;
+
+  @media (min-width: $tablet-width) {
+    top: -33px;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+  }
 }
 
 .program-eat__button {
@@ -58,6 +77,9 @@
   margin-top: 138px;
 
   @media (min-width: $tablet-width) {
+    margin-top: -12px;
+    margin-left: 82px;
+    width: max-content;
     font-size: 20px;
     line-height: 24px;
   }

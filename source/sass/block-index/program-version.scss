@@ -3,6 +3,10 @@
   grid-template-rows: 1fr 1fr;
   gap: 20px;
 
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
@@ -20,52 +24,102 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+  }
 }
 
 .program-version__title {
-
-
-  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+  margin-left: 23px;
   font-size: 24px;
   line-height: 37px;
-
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: relative;
+    margin-top: 78px;
+    margin-left: 52px;
+    font-size: 36px;
+    line-height: 40px;
+  }
 
   &::before {
     content: "";
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    top: 21px;
-    left: -69px;
+    display: block;
+    margin-right: 18px;
     height: 53px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+    }
   }
 
   &--sliming::before {
     width: 50px;
     background-image: url("../img/slim_cat.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 5px;
+      left: 393px;
+      width: 200px;
+      height: 211px;
+      background-image: url("../img/slim_tablet_cat.svg");
+    }
   }
 
-  &--fat::before {
-    width: 67px;
-    background-image: url("../img/fat_cat.svg");
-    background-repeat: no-repeat;
+  &--fat {
+    margin-left: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 52px;
+    }
+
+    &::before {
+      margin-right: 12px;
+      width: 67px;
+      height: 50px;
+      background-image: url("../img/fat_cat.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        top: 15px;
+        left: 361px;
+        width: 268px;
+        height: 200px;
+        background-image: url("../img/fat_tablet_cat.svg");
+      }
+    }
   }
 }
 
 .program-version__description {
-  margin-top: 29px;
- padding-left: 20px;
+  margin-top: 22px;
+  padding-left: 20px;
   padding-right: 17px;
   font-size: 14px;
   line-height: 19px;
   color: $special_dark-grey;
-  border-bottom: 1px solid $border-grey;
+  border-bottom: $border-line-grey;
 
   @media (min-width: $tablet-width) {
+    margin-top: 22px;
+    padding-left: 52px;
+    padding-right: 0;
+    width: 424px;
     font-size: 16px;
     line-height: 24px;
+    border-bottom: none;
+  }
+
+  &--fat-text {
+    @media (min-width: $tablet-width) {
+      width: 392px;
+    }
   }
 }
 
@@ -79,11 +133,21 @@
   color: $black;
   background-color: $basic_grey;
 
+  @media (min-width: $tablet-width) {
+    padding: 33px 0 54px 53px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &:active {
     opacity: 0.3;
   }
 }
 
 .program-version__button-image {
-     margin-left: 15px;
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 24px;
+  }
 }

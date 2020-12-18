@@ -1,5 +1,4 @@
 .page-footer {
-  background-color: $basic_grey;
 }
 
 .page-footer__contacts {
@@ -26,7 +25,10 @@
 }
 
 .contacts__window {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 26px;
+  margin-bottom: 26px;
 
   &--grey {
     background-color: $basic_grey;
@@ -34,6 +36,8 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+    margin-top: 65px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,11 +48,18 @@
 }
 
 .contacts__title {
-  margin-right: 10px;
-  width: 140px;
+  display: block;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 208px;
+    max-width: 400px;
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 42px;
+  }
 }
 
 .contacts__text {
@@ -58,8 +69,10 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: $mobile-width;
-    padding-left: 150px;
+    width: 311px;
+    max-width: 350px;
+    font-size: 16px;
+    line-height: 20px;
     text-align: right;
   }
 
@@ -69,7 +82,20 @@
   }
 }
 
-.footer-map {
+.contacts__text-city {
+  @media (max-width: $mobile-width-only) {
+    .carryover {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 19px;
+  }
+}
+
+.page-footer__map {
   width: 100%;
   height: 362px;
   border: none;
@@ -84,33 +110,43 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+  background-color: $basic_grey;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 60px;
+
+    padding-top: 27px;
   }
 }
 
 .page-footer__logo {
-  margin: 39px auto 32px auto;
+  margin: 37px auto 28px auto;
 
   @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
 
-.social__list {
+.social {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-top: 22px;
-  padding-bottom: 23px;
+  padding: 21px 0 16px;
+  justify-content: center;
   border-top: $border-line-grey;
   border-bottom: $border-line-grey;
+}
+
+.social__list {
+  display: flex;
+  min-width: 130px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    padding-left: 43px;
+    min-width: 129px;
     border: none;
   }
 }
@@ -123,6 +159,24 @@
 
 .social__icon {
   color: $black-icon;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+
+  &--instagram {
+    @media (min-width: $tablet-width) {
+    width: 33px;
+    height: 23px;
+  }
+}
+  &--facebook {
+    @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+}
 
   &:hover,
   &:focus {
@@ -138,6 +192,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
   font-size: 16px;
   line-height: 18px;
   color: $special_dark-grey;

@@ -13,6 +13,7 @@ $border-grey: #d9d9d9;
 $block-border-grey: #e6e6e6;
 $border-lighter-grey: #ebebeb;
 $border-darker-grey: #bababa;
+$range-grey: #dcdcdc;
 $basic_green: #68b738;
 $light-green: rgba(#68b738, 0.3);
 $green: rgba(#68b738, 0.85);
@@ -20,6 +21,7 @@ $darker-green: #5eaa2f;
 $red: #ff8282;
 $white: #ffffff;
 $white-opacity-30: rgba(#ffffff, 0.3);
+$black-shadow: rgba(#000000, 0.16);
 
 // Viewports
 
@@ -38,3 +40,7 @@ $border-line-grey: 1px solid $border-grey;
 $border-line-green: 2px solid $basic_green;
 $border-menu: 1px solid $block-border-grey;
 $border-line-lighter-grey: 1px solid $border-lighter-grey;
+$border-range: 13px solid $white;
+$border-range-active: 1px solid $basic-green;
+$border-dotted: 1px dotted $black;
+$border-solid: 1px solid $black;

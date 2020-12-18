@@ -15,30 +15,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
   }
 }
 
-.center {
-  padding: 0 20px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-
-  &--menu {
-    @media (min-width: $tablet-width) {
-      padding: 0 30px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0 110px;
-    }
-  }
-}
 
 .page-header__logo {
   height: 38px;

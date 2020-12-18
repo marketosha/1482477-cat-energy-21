@@ -43,7 +43,8 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-width: 500px;
+    min-width: 440px;
+    margin-top: 26px;
   }
 }
 
@@ -59,6 +60,7 @@
     padding-bottom: 0px;
     padding-top: 0;
     margin-right: 32px;
+    border-top: none;
 
     &:last-child {
       margin-right: 0;
