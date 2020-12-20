@@ -10,6 +10,11 @@
     font-size: 60px;
     line-height: 61px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 72px;
+    margin-bottom: 71px;
+  }
 }
 
 .program-description__list {
@@ -26,6 +31,7 @@
   @media (min-width: $desktop-width) {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 54px;
   }
 }
 
@@ -54,6 +60,7 @@
       content: counter(section);
     }
   }
+
   &:last-child {
     margin-bottom: 41px;
 
@@ -79,21 +86,37 @@
   &--nutritional::before {
     background-image: url("../img/nutritional_icon.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/nutritional_icon_tablet.svg");
+    }
   }
 
   &--fast::before {
     background-image: url("../img/fast_icon.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/fast_icon_tablet.svg");
+    }
   }
 
   &--economy::before {
     background-image: url("../img/economy_icon.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/economy_icon_tablet.svg");
+    }
   }
 
   &--changes::before {
     background-image: url("../img/changes_icon.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/changes_icon_tablet.svg");
+    }
   }
 }
 

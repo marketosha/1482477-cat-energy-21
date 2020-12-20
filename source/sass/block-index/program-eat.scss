@@ -1,5 +1,29 @@
 .program-eat {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: -114px;
+      left: 720px;
+      height: 694px;
+      width: 720px;
+    }
+
+    &::after {
+      background-size: cover;
+      background-image: url("../img/cat_background_desktop.jpg");
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+
+    &::before {
+      background: rgba(104, 183, 56, 0.85);
+      z-index: -1;
+    }
+  }
 }
 
 .program-eat__content-wrapper {
@@ -29,6 +53,11 @@
     padding-top: 57px;
     padding-left: 88px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 106px;
+    padding-left: 80px;
+  }
 }
 
 .program-eat__slogan {
@@ -47,6 +76,10 @@
     color: $black;
     text-align: justify;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .program-eat__wrapper {
@@ -56,6 +89,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 5px;
     min-height: 572px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 315px;
   }
 }
 
@@ -68,6 +105,13 @@
     width: 709px;
     height: 609px;
     z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 558px;
+    top: -320px;
+    width: 552px;
+    height: 449px;
   }
 }
 
@@ -82,5 +126,10 @@
     width: max-content;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+    margin-left: 80px;
   }
 }
