@@ -9,29 +9,26 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header center--menu">
+  <header class="page-header page-header--nojs center--menu">
     <div class="page-header__container center">
       <a class="page-header__logo">
         <img src="https://via.placeholder.com/150x150" height="38" alt="Логотип CatEnergy">
       </a>
-      <div class="page-header__button-wrapper page-header--closed main-navigation--nojs">
-        <button class="page-header__toogle form-border" class="page-header__toggle" type="button"
-          aria-label="Открыть меню"></button>
+      <div class="page-header__button-wrapper">
+        <button class="page-header__toogle form-border" type="button" aria-label="Открыть меню"></button>
       </div>
-
     </div>
-    <nav class="main-navigation page-header--closed">
-      <ul class="main-navigation__list main-navigation__list--mobile list ">
-        <li class="main-navigation__item container">
-          <a class="main-navigation__link main-navigation__item--active">Главная</a>
-        </li>
-        <li class="main-navigation__item container">
-          <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-navigation__item container">
-          <a class="main-navigation__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
+    <ul class="page-header__list list ">
+      <li class="page-header__item container">
+        <a class="page-header__link page-header__item--active">Главная</a>
+      </li>
+      <li class="page-header__item container">
+        <a class="page-header__link" href="catalog.html">Каталог продукции</a>
+      </li>
+      <li class="page-header__item container">
+        <a class="page-header__link" href="form.html">Подбор программы</a>
+      </li>
+    </ul>
     </nav>
   </header>
   <main class="page-main">
@@ -83,22 +80,22 @@
     <section class="program-description container">
       <h2 class="program-description__title title">Как это работает</h2>
       <ul class="program-description__list list">
-        <li class="program-description__item program-description__item--nutritional text">
+        <li class="program-description__item program-description__item--nutritional">
           <p class="program-description__text text indents-to-zero">
             Функциональное питание содержит только полезные питательные вещества.
           </p>
         </li>
-        <li class="program-description__item program-description__item--fast text">
+        <li class="program-description__item program-description__item--fast">
           <p class="program-description__text text indents-to-zero">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </p>
         </li>
-        <li class="program-description__item program-description__item--economy text">
+        <li class="program-description__item program-description__item--economy">
           <p class="program-description__text text indents-to-zero">
             Замените один-два приема обычной еды на наше функциональное питание.
           </p>
         </li>
-        <li class="program-description__item program-description__item--changes text">
+        <li class="program-description__item program-description__item--changes">
           <p class="program-description__text text indents-to-zero">
             Уже через месяц наслаждайтесь изменениями к лучшему<br class="carryover"> вашего питомца!
           </p>
@@ -140,19 +137,19 @@
             <img class="program-example__image program-example__image--after visually-hidden"
               src="https://via.placeholder.com/150x150" alt="Худой кот после использования программы питания">
           </div>
-          <ul class="program-example__filter slider-filter list">
-            <li class="slider-filter__item">
+          <div class="program-example__filter slider-filter">
+            <div class="slider-filter__item">
               <button class="slider-filter__button slider-filter__button--before" type="button">было</button>
-            </li>
-            <li class="slider-filter__item">
+            </div>
+            <div class="slider-filter__item">
               <div class="slider-filter__scale">
                 <span class="slider-filter__bar"></span>
               </div>
-            </li>
-            <li class="slider-filter__item">
+            </div>
+            <div class="slider-filter__item">
               <button class="slider-filter__button slider-filter__button--after">стало</button>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
