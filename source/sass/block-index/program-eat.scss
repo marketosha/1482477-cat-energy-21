@@ -1,33 +1,5 @@
-.program-eat {
-  position: relative;
-
-  @media (min-width: $desktop-width) {
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: -114px;
-      left: 720px;
-      height: 694px;
-      width: 720px;
-    }
-
-    &::after {
-      background-size: cover;
-      background-image: url("../img/cat_background_desktop.jpg");
-      background-repeat: no-repeat;
-      z-index: -2;
-    }
-
-    &::before {
-      background: $green;
-      z-index: -1;
-    }
-  }
-}
-
 .program-eat__content-wrapper {
-  background-image: linear-gradient($green, $green),
+  background-image: linear-gradient($green-opacity-85, $green-opacity-85),
     url("../img/cat_background.png");
   background-position: top center;
   background-repeat: no-repeat;
@@ -36,6 +8,11 @@
 
   @media (min-width: $tablet-width) {
     background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -108,10 +85,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 558px;
+    left: 37%;
     top: -320px;
     width: 552px;
     height: 449px;
+    z-index: 1;
   }
 }
 

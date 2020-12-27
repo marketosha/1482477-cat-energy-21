@@ -33,6 +33,7 @@
 .program-example__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
+    padding: 0 calc(50% - 610px);
   }
 }
 
@@ -42,6 +43,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     background-color: $light-grey;
   }
 }
@@ -199,7 +201,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
+    padding: 0;
+    margin-left: 118px;
   }
 }
 
