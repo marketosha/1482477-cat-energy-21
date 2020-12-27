@@ -85,10 +85,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 37%;
     top: -320px;
     width: 552px;
     height: 449px;
+    transform: translateX(71%);
     z-index: 1;
   }
 }

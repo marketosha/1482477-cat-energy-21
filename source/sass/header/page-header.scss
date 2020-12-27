@@ -21,14 +21,16 @@
     font-size: 20px;
     line-height: 30px;
 
-    &::before {
-      content: url("../img/cat_background_desktop.jpg");
-      position: absolute;
-      top: 0;
-      left: var(--left-position);
-      width: 720px;
-      height: 640px;
-      background-color: $green-opacity-85;
+    &--index {
+      &::before {
+        content: url("../img/cat_background_desktop.jpg");
+        position: absolute;
+        top: 0;
+        left: var(--left-position);
+        width: 720px;
+        height: 640px;
+        background-color: $green-opacity-85;
+      }
     }
   }
 }
@@ -46,11 +48,25 @@
 }
 
 .page-header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   height: 38px;
 
   @media (min-width: $desktop-width) {
     margin-top: 54px;
   }
+}
+
+.page-header__image {
+  width: 34px;
+  height: 38px;
+}
+
+.page-header__image-text {
+  margin-left: 52px;
+  width: 101px;
+  height: 18px;
 }
 
 .page-header__toogle-wrapper {
