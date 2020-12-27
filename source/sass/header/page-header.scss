@@ -17,7 +17,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    --left-position: calc(100% - 1280px / 2 - (100% - 1280px) / 2);
     font-size: 20px;
     line-height: 30px;
 
@@ -26,9 +25,11 @@
         content: url("../img/cat_background_desktop.jpg");
         position: absolute;
         top: 0;
-        left: var(--left-position);
-        width: 720px;
-        height: 640px;
+        right: 0;
+        bottom: 0;
+        min-width: 50%;
+        width: auto;
+        height: 694px;
         background-color: $green-opacity-85;
       }
     }
@@ -48,9 +49,6 @@
 }
 
 .page-header__logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   height: 38px;
 
   @media (min-width: $desktop-width) {
@@ -59,17 +57,11 @@
 }
 
 .page-header__image {
-  width: 34px;
+  width: 191px;
   height: 38px;
 }
 
-.page-header__image-text {
-  margin-left: 52px;
-  width: 101px;
-  height: 18px;
-}
-
-.page-header__toogle-wrapper {
+.page-header__toggle-wrapper {
   position: relative;
 
   &::before {
@@ -88,7 +80,7 @@
   }
 }
 
-.page-header__toogle {
+.page-header__toggle {
   position: relative;
   display: block;
   width: 42px;
@@ -101,7 +93,7 @@
   }
 }
 
-.page-header--opened .page-header__toogle-wrapper {
+.page-header--opened .page-header__toggle-wrapper {
   &::before {
     display: none;
   }
@@ -119,7 +111,7 @@
   }
 }
 
-.page-header--opened .page-header__toogle {
+.page-header--opened .page-header__toggle {
   &::before,
   &::after {
     content: "";
@@ -140,7 +132,7 @@
   }
 }
 
-.page-header--nojs .page-header__toogle-wrapper {
+.page-header--nojs .page-header__toggle-wrapper {
   display: none;
 }
 
