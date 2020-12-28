@@ -1,0 +1,22 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+
+  &:focus {
+    color: $black-opacity-30;
+  }
+}
+
+.copyright__text {
+  margin-right: 22px;
+}
+
+.copyright__text-design {
+  text-transform: uppercase;
+}

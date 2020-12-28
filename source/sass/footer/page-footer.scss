@@ -1,7 +1,3 @@
-.page-footer {
-  background-color: $basic_grey;
-}
-
 .page-footer__contacts {
   background-color: $white;
 }
@@ -14,62 +10,7 @@
   }
 }
 
-.contacts {
-  @media (min-width: $desktop-width) {
-    display: block;
-    position: absolute;
-    top: 95px;
-    width: 570px;
-    height: 201px;
-    background-color: $white;
-  }
-}
-
-.contacts__window {
-  display: flex;
-
-  &--grey {
-    background-color: $basic_grey;
-  }
-
-  @media (min-width: $tablet-width) {
-    justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 66px;
-    padding-left: 76px;
-    background-color: $white;
-  }
-}
-
-.contacts__title {
-  margin-right: 10px;
-  width: 140px;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.contacts__text {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: $special_dark-grey;
-
-  @media (min-width: $tablet-width) {
-    width: $mobile-width;
-    padding-left: 150px;
-    text-align: right;
-  }
-
-  @media (min-width: $desktop-width) {
-    align-items: center;
-    text-align: left;
-  }
-}
-
-.footer-map {
+.page-footer__map {
   width: 100%;
   height: 362px;
   border: none;
@@ -79,78 +20,27 @@
   }
 }
 
-// Footer-logo, social
-
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+  background-color: $basic_grey;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 60px;
+    padding-top: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
   }
 }
 
 .page-footer__logo {
-  margin: 39px auto 32px auto;
+  margin: 37px auto 28px auto;
 
   @media (min-width: $tablet-width) {
     margin: 0;
   }
-}
-
-.social__list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-top: 22px;
-  padding-bottom: 23px;
-  border-top: $border-line-grey;
-  border-bottom: $border-line-grey;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
-}
-
-.social__item {
-  @media (min-width: $tablet-width) {
-    margin-right: 20px;
-  }
-}
-
-.social__icon {
-  color: $black-icon;
-
-  &:hover,
-  &:focus {
-    color: $basic_green;
-  }
-
-  &:active {
-    color: $light-green;
-  }
-}
-
-.copyright__link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-  line-height: 18px;
-  color: $special_dark-grey;
-
-  &:focus {
-    color: $black-opacity-30;
-  }
-}
-
-.copyright__text {
-  margin-right: 22px;
-}
-
-.copyright__text-design {
-  text-transform: uppercase;
 }

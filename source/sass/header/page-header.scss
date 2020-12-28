@@ -1,15 +1,38 @@
 .page-header {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    justify-content: space-between;
-    align-items: center;
-  }
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     align-self: flex-end;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--index {
+      &::before {
+        content: url("../img/cat_background_desktop.jpg");
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        min-width: 50%;
+        width: auto;
+        height: 694px;
+        background-color: $green-opacity-85;
+      }
+    }
   }
 }
 
@@ -18,6 +41,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 13px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -26,10 +50,92 @@
 
 .page-header__logo {
   height: 38px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 54px;
+  }
 }
 
-.page-header__toggle {
+.page-header__image {
+  width: 191px;
+  height: 38px;
+}
+
+.page-header__toggle-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    width: 24px;
+    height: 2px;
+    background-color: $white;
+    box-shadow: 0 2px 0 0 $black, 0 10px 0 0 $black, 0 18px 0 0 $black;
+    z-index: 1;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.page-header__toggle {
+  position: relative;
+  display: block;
+  width: 42px;
+  min-height: 30px;
+  background-color: $white;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header--opened .page-header__toggle-wrapper {
+  &::before {
+    display: none;
+  }
+}
+
+.page-header .main-navigation {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.page-header--opened .main-navigation {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
+
+.page-header--opened .page-header__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.page-header--nojs .page-header__toggle-wrapper {
+  display: none;
+}
+
+.page-header--nojs .main-navigation {
+  display: block;
 }

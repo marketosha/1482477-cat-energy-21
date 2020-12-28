@@ -23,11 +23,28 @@
   }
 
   @media (min-width: $desktop-width) {
-    --content-area: 1440px;
-    --content-area-padding: 110px;
+    --content-area: 1280px;
+    --content-area-padding: 30px;
   }
 }
 
+.center {
+  padding: 0 calc(50% - 140px);
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  &--menu {
+    @media (min-width: $tablet-width) {
+      padding: 0 calc(50% - 354px);
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 calc(50% - 610px);
+    }
+  }
+}
 //style
 
 .list {
@@ -107,7 +124,7 @@
 .button {
   display: block;
   width: 100%;
-  padding: 7px 44px;
+  padding: 11px 44px;
   text-transform: uppercase;
   text-align: center;
   color: $white;
