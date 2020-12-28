@@ -10,7 +10,7 @@
 
 <body class="page-body">
   <header class="page-header center center--menu page-header--nojs">
-    <div class="page-header__container center">
+    <div class="page-header__container">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__image" src="img/header__logo.svg" width="191" height="38" alt="Логотип CatEnergy">
       </a>
@@ -35,7 +35,7 @@
   <main class="page-main page-main--form title">
     <div class="page-main__wrapper container">
       <h1 class="page-main__title indents-to-zero">Подбор программы</h1>
-      <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="page-main__text">Заполните анкету, и мы подберем<br class="carryover"> программу питания для вашего кота</p>
     </div>
     <form class="form indents-to-zero" method="post" action="https://echo.htmlacademy.ru">
       <div class="form__wrapper">
@@ -85,13 +85,13 @@
           (владельца кота)</h2>
         <div class="contact-user__description-wrapper  form-info">
           <div class="form-info__description form-info__description--contact">
-            <label class="form-info__label" for="contact-mail">E-mail:*</label>
-            <input class="form-info__input" id="contact-mail" type="email" name="mail-user"
+            <label class="form-info__label form-info__label--contact" for="contact-mail">E-mail:*</label>
+            <input class="form-info__input form-info__input--contact form-info__input--mail" id="contact-mail" type="email" name="mail-user"
               placeholder="kuklachev@gmail.com" required>
           </div>
           <div class="form-info__description form-info__description--contact">
-            <label class="form-info__label" for="contact-tel">Телефон:*</label>
-            <input class="form-info__input" type="tel" id="contact-tel" name="phone_number"
+            <label class="form-info__label form-info__label--contact" for="contact-tel">Телефон:*</label>
+            <input class="form-info__input form-info__input--contact form-info__input--tel" type="tel" id="contact-tel" name="phone_number"
               placeholder="8 (960) 900-60-90"
               pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
           </div>
@@ -99,14 +99,14 @@
       </fieldset>
       <fieldset class="form__user-comment user-comment form-border fieldset-indent container">
         <div>
-          <label class="user-comment__label border-title" for="comment-text">Комментарий</label>
+          <label class="user-comment__label border-title border-title--comment" for="comment-text">Комментарий</label>
         </div>
         <textarea name="user-comment__text" id="comment-text" rows="10"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__extra-filter extra-filter form-border fieldset-indent container">
         <legend class="extra-filter__title border-title">Дополнительно</legend>
-        <ul class="extra-filter__list filter--border list">
+        <ul class="extra-filter__list filter filter filter--border list">
           <li class="filter__item">
             <input class="filter__input visually-hidden" type="checkbox" name="extra-suger" value="suger"
               id="extra-filter__suger" checked>

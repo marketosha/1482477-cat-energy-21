@@ -22,6 +22,55 @@
 .form-info__input {
   width: 100%;
   flex-shrink: 5000;
+  padding-left: 15px;
+  height: 45px;
+  border: $border-input-grey;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::placeholder {
+    font-family: inherit;
+    color: $special_dark-grey;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    border: $border-input-hover;
+  }
+
+  &:active {
+    border: $border-input-active;
+  }
+
+  &:disabled {
+    border: $border-input-disabled;
+  }
+
+&--contact {
+  padding-left: 13px;
+  background-position: 93% 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+  &--mail {
+    margin-top: 3px;
+    background-image: url("../img/icon_email.svg");
+  }
+
+    &--tel {
+      background-image: url("../img/icon_phone.svg");
+     }
 }
 
 .form-info__label {
@@ -30,6 +79,10 @@
   line-height: 18px;
   color: $special_dark-grey;
   text-transform: uppercase;
+
+&--contact {
+     margin-right: 11px;
+}
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
