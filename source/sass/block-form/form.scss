@@ -20,6 +20,10 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    border: $border-input-grey;
+  }
 }
 
 .form__main-user {

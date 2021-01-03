@@ -12,8 +12,8 @@
     margin-bottom: 20px;
   }
 
-  @media (min-width: $desktop-width) {
-    &--contact {
+  &--contact {
+    @media (min-width: $desktop-width) {
       margin-right: 30px;
       margin-bottom: 0;
       flex-grow: 1;
@@ -60,14 +60,14 @@
     border: $border-input-disabled;
   }
 
-  @media (min-width: $tablet-width) {
-    &--weight {
+  &--weight {
+    @media (min-width: $tablet-width) {
       padding-left: 21px;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    &--age {
+  &--age {
+    @media (min-width: $tablet-width) {
       padding-left: 18px;
     }
   }
