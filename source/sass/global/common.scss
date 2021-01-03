@@ -29,22 +29,23 @@
 }
 
 .center {
+  @media (min-width: $tablet-width) {
+    padding: 0 calc(50% - 354px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 calc(50% - 610px);
+  }
+}
+
+.center-menu {
   padding: 0 calc(50% - 140px);
 
   @media (min-width: $tablet-width) {
     padding: 0;
   }
-
-  &--menu {
-    @media (min-width: $tablet-width) {
-      padding: 0 calc(50% - 354px);
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0 calc(50% - 610px);
-    }
-  }
 }
+
 //style
 
 .list {
@@ -87,39 +88,37 @@
   position: relative;
   padding-right: 46px;
 
-&--comment {
-  padding-right: 22px;
-}
+  &--comment,
+  &--extra {
+    padding-right: 22px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 39px;
+    }
+  }
 
   &::before,
   &::after {
     content: "";
     position: absolute;
+    top: 20px;
     width: 100vw;
     height: 2px;
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+      margin-right: 40px;
+      background-color: $basic_green;
+    }
   }
 
   &::before {
-    top: 20px;
     right: 100%;
   }
 
   &::after {
-    top: 21px;
     left: 100%;
     background-color: $basic_green;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      top: 20px;
-      margin-right: 15px;
-      background-color: $basic_green;
-    }
-
-    &::after {
-      top: 20px;
-    }
   }
 }
 
@@ -127,7 +126,6 @@
 
 .button {
   display: block;
-  width: 100%;
   padding: 11px 44px;
   text-transform: uppercase;
   text-align: center;

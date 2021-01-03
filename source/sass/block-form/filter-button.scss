@@ -5,9 +5,15 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 61px;
+    padding: 24px 45px;
+    min-width: 282px;
+    font-size: 20px;
+    line-height: 5px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 81px;
+    padding-right: 208px;
+    padding-left: 208px;
   }
 }

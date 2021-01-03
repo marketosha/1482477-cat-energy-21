@@ -12,10 +12,6 @@
   }
 }
 
-.form-info__input {
-
-}
-
 .form__program-border-wrapper {
   border: $border-line-grey;
   border-left: none;
@@ -36,7 +32,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin-right: 75px;
+    margin-right: 81px;
   }
 }
 

@@ -1,7 +1,14 @@
 .contact-user {
   position: relative;
-  overflow: hidden;
   margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 69px;
+  }
 }
 
 .contact-user__description-wrapper {
@@ -11,13 +18,13 @@
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 76px;
+    margin-top: 69px;
     margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

@@ -8,6 +8,10 @@
     margin-right: 0;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     &--contact {
       margin-right: 30px;
@@ -56,21 +60,37 @@
     border: $border-input-disabled;
   }
 
-&--contact {
-  padding-left: 13px;
-  background-position: 93% 50%;
-  background-size: 20px;
-  background-repeat: no-repeat;
-}
+  @media (min-width: $tablet-width) {
+    &--weight {
+      padding-left: 21px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--age {
+      padding-left: 18px;
+    }
+  }
+
+  &--contact {
+    padding-left: 13px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 14px;
+    }
+  }
 
   &--mail {
     margin-top: 3px;
-    background-image: url("../img/icon_email.svg");
-  }
 
-    &--tel {
-      background-image: url("../img/icon_phone.svg");
-     }
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 11px;
+    }
+  }
 }
 
 .form-info__label {
@@ -80,12 +100,23 @@
   color: $special_dark-grey;
   text-transform: uppercase;
 
-&--contact {
-     margin-right: 11px;
-}
-
   @media (min-width: $tablet-width) {
+    margin-right: 20px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &--contact {
+    margin-right: 11px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+    }
+  }
+
+  &--contact-tel {
+    @media (min-width: $desktop-width) {
+      padding-left: 39px;
+    }
   }
 }
