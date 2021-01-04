@@ -2,7 +2,12 @@
   overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
-    padding: 0 39px;
+    --content-area-padding: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    --content-area: 1280px;
+    --content-area-padding: 30px;
   }
 }
 
@@ -21,26 +26,36 @@
 }
 
 .page-main__title {
-  margin-top: 27px;
+  margin-top: 25px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    margin-top: 59px;
     font-size: 60px;
     line-height: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 72px;
   }
 }
 
 .page-main__text {
-  margin-top: 37px;
+  margin-top: 10px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-top: 54px;
+    margin-top: 12px;
+    margin-bottom: 66px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 13px;
   }
 }

@@ -10,16 +10,20 @@
 }
 
 .extra-filter__list {
-  margin-top: 39px;
+  margin-top: 35px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-column-gap: 63px;
+    margin-top: 41px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 80px;
+    margin-top: 45px;
   }
 }

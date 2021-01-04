@@ -1,5 +1,13 @@
+.page-footer--grey {
+  background-color: $basic_grey;
+}
+
 .page-footer__contacts {
   background-color: $white;
+
+  &--grey {
+    background-color: $basic_grey;
+  }
 }
 
 .page-footer__contacts-wrapper {

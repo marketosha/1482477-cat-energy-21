@@ -103,6 +103,10 @@
         left: 0;
         height: 2px;
         background-color: $basic_green;
+
+        @media (min-width: $desktop-width) {
+          top: 37px;
+        }
       }
     }
   }
