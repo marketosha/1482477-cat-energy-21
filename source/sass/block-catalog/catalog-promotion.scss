@@ -1,5 +1,6 @@
 .catalog-promotion {
   position: relative;
+  margin-top: 36px;
   margin-bottom: 35px;
   width: 280px;
   height: 289px;
@@ -7,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 69px;
-    margin-bottom: 79px;
+    margin-bottom: 4px;
     width: 708px;
     height: 200px;
   }
@@ -34,17 +35,26 @@
     content: "";
     display: block;
     margin-top: 58px;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
     width: 78px;
     height: 80px;
     background-image: url("../img/gift_catalog.svg");
+
+    @media (min-width: $tablet-width) {
+      margin-top: 46px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 43px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     margin-left: 78px;
-    padding-right: 149px;
+    padding-top: 14px;
+    padding-right: 126px;
     text-align: left;
   }
 

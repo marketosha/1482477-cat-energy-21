@@ -1,9 +1,10 @@
 .catalog-extra {
   overflow: hidden;
+  margin-top: 24px;
 }
 
 .catalog-extra__wrapper {
-  margin-top: 36px;
+  margin-top: 31px;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -21,18 +22,26 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    padding-left: 38px;
+    padding-right: 35px;
     font-size: 36px;
     line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
 .catalog-extra__list {
   @media (min-width: $tablet-width) {
+    margin-top: 79px;
     border: $border-input-hover;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 869px;
+    min-width: 894px;
+    margin-top: 0;
     margin-bottom: 86px;
     border-left: none;
     border-right: none;
@@ -44,6 +53,10 @@
 
   &:last-child {
     border-bottom: $border-input-hover;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -51,7 +64,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content;
     border-bottom: none;
-    padding: 26px 38px;
+    padding: 15px 38px;
 
     &:first-child {
       border-top: none;
@@ -67,14 +80,16 @@
 }
 
 .catalog-extra__title {
-  padding-top: 13px;
-  padding-bottom: 18px;
+  padding-top: 10px;
+  padding-bottom: 9px;
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-column: 1/2;
     grid-row: 1/3;
     align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -99,6 +114,7 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
+    padding-top: 14px;
     font-size: 16px;
     line-height: 20px;
     justify-content: flex-end;
@@ -113,8 +129,26 @@
   }
 }
 
+.catalog-extra__description {
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+}
+
+.catalog-extra__value {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
+    text-align: center;
+  }
+}
+
 .catalog-extra__button {
-  margin-top: 15px;
+  margin-top: 12px;
   margin-bottom: 18px;
   color: $white;
 
@@ -132,13 +166,16 @@
     grid-row: 2/3;
     grid-column: 1/3;
     align-items: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: $desktop-width) {
     align-items: center;
     grid-column: 3/4;
-    width: 244px;
+    min-width: 244px;
     margin-top: 15px;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
   }
 }
