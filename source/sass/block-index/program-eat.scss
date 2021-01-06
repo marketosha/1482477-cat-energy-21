@@ -95,8 +95,6 @@
 
   @media (min-width: $desktop-width) {
     --container-block-indent: 448px;
-    --container-width: 50% - var(--container-padding) +
-      var(--content-area-padding);
     top: -315px;
     left: calc(var(--container-width) + var(--container-block-indent));
     width: 552px;
