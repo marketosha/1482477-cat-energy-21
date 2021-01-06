@@ -15,7 +15,9 @@
   --content-area: 320px;
   --container-padding: calc((var(--content-area)) / 2);
   --content-area-padding: 20px;
-  padding: 0 calc(50% - var(--container-padding) + var(--content-area-padding));
+  --container-width: calc(50% - var(--container-padding) +
+    var(--content-area-padding));
+  padding: 0 var(--container-width);
 
   @media (min-width: $tablet-width) {
     --content-area: 768px;
@@ -79,6 +81,10 @@
 
 .fieldset-indent {
   margin: 0;
+}
+
+.image-normalize {
+  vertical-align: middle;
 }
 
 //border

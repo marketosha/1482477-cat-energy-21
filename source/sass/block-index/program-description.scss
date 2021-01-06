@@ -74,6 +74,10 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    min-height: 240px;
+  }
+
   &:last-child {
     margin-bottom: 41px;
 
