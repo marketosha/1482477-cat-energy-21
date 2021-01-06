@@ -22,20 +22,20 @@
 
     &--index {
       &::before {
-        content: url("../img/cat_background_desktop.jpg");
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         min-width: 50%;
-        width: auto;
         height: 694px;
+        background-image: url("../img/cat_background_desktop.jpg");
+        background-repeat: no-repeat;
         background-color: $green-opacity-85;
 
         @media (min-resolution: 2dppx) {
-          background-image: url("../img/cat_background_desktop@2x.jpg"),
-            linear-gradient($green-opacity-85, $green-opacity-85);
-          background-repeat: no-repeat;
+          content: "";
+          background-image: url("../img/cat_background_desktop@2x.jpg");
           background-size: 727px 694px;
         }
       }
@@ -49,17 +49,19 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 13px;
-
-  @media (min-width: $tablet-width) {
-    width: 174px;
-  }
 }
 
 .page-header__logo {
   height: 38px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+    height: 52px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-top: 19px;
+    margin-top: 36px;
+    height: 59px;
   }
 }
 

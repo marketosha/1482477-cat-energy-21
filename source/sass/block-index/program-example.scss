@@ -2,7 +2,7 @@
   background-color: $light-grey;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient($white 0%, $white 57%, $light-grey 57%, $light-grey 100%);
+    background-image: linear-gradient($white 0%, $white 58%, $light-grey 58%, $light-grey 100%);
     border-top: $border-menu;
   }
 
@@ -27,8 +27,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 28px;
-    padding-bottom: 50px;
+    padding-top: 67px;
+    padding-bottom: 73px;
   }
 }
 
@@ -36,7 +36,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
     padding: 0 calc(50% - 610px);
-    margin-top: 20px;
     background-color: $light-grey;
   }
 }
@@ -53,7 +52,7 @@
 }
 
 .program-example__text {
-  margin-bottom: 11px;
+  margin-bottom: 27px;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
@@ -65,13 +64,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 37px;
+    margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 52px;
+    margin-bottom: 68px;
     padding-top: 72px;
     width: 436px;
 
@@ -115,6 +114,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 42px;
+    margin-bottom: 5px;
     min-width: 162px;
     min-height: 72px;
   }
@@ -167,7 +167,7 @@
 }
 
 .program-example__cost-text {
-  margin-top: 17px;
+  margin-top: 33px;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -187,7 +187,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 39px;
+    margin-top: 51px;
   }
 }
 
@@ -203,34 +203,36 @@
     flex-direction: column;
     padding: 0;
     margin-left: 118px;
+    margin-top: -191px;
   }
 }
 
 .program-example__image {
-  position: relative;
-  left: -20px;
   margin-top: 41px;
-  margin-bottom: -7px;
+  margin-bottom: 30px;
+  margin-left: -15px;
 
   @media (min-width: $tablet-width) {
-    width: 698px;
+    margin-top: 78px;
+    margin-bottom: 1px;
+    margin-left: 18px;
+    width: 666px;
+    height: 519px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 670px;
+    margin-top: 0;
+    margin-bottom: 21px;
+    width: 677px;
+  }
+
+  &--after {
+    display: none;
   }
 }
 
 .program-example__image-wrapper {
   overflow: hidden;
-
-  @media (min-width: $tablet-width) {
-    height: 600px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 363px;
-  }
 }
 
 .program-example__button-wraper {

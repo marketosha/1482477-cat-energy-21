@@ -7,12 +7,13 @@
   width: 100%;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/cat_background@2x.jpg"),
-      linear-gradient($green-opacity-85, $green-opacity-85);
+    background-image: url("../img/cat_background@2x.jpg");
     background-size: 320px 302px;
+    background-color: $green-opacity-85;
   }
 
   @media (min-width: $tablet-width) {
+    background-color: transparent;
     background-image: none;
   }
 
@@ -93,10 +94,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    --container-block-padding: 448px;
     top: -315px;
+    left: calc(50% - var(--container-padding) + var(--content-area-padding) +
+        var(--container-block-padding));
     width: 552px;
     height: 499px;
-    transform: translateX(81%);
     z-index: 1;
   }
 }
