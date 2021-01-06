@@ -31,6 +31,13 @@
         width: auto;
         height: 694px;
         background-color: $green-opacity-85;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/cat_background_desktop@2x.jpg"),
+            linear-gradient($green-opacity-85, $green-opacity-85);
+          background-repeat: no-repeat;
+          background-size: 727px 694px;
+        }
       }
     }
   }
@@ -52,13 +59,23 @@
   height: 38px;
 
   @media (min-width: $desktop-width) {
-    margin-top: 54px;
+    margin-top: 19px;
   }
 }
 
 .page-header__image {
   width: 191px;
   height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .page-header__toggle-wrapper {

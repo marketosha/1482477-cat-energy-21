@@ -1,10 +1,16 @@
 .program-eat__content-wrapper {
-  background-image: linear-gradient($green-opacity-85, $green-opacity-85),
-    url("../img/cat_background.png");
+  background-image: url("../img/cat_background.jpg"),
+    linear-gradient($green-opacity-85, $green-opacity-85);
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 302px;
   width: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat_background@2x.jpg"),
+      linear-gradient($green-opacity-85, $green-opacity-85);
+    background-size: 320px 302px;
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -76,19 +82,21 @@
 .program-eat__image {
   position: absolute;
   top: -274px;
+  width: 280px;
+  height: 270px;
 
   @media (min-width: $tablet-width) {
-    top: -33px;
+    top: -29px;
     width: 709px;
     height: 609px;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    top: -320px;
+    top: -315px;
     width: 552px;
-    height: 449px;
-    transform: translateX(71%);
+    height: 499px;
+    transform: translateX(81%);
     z-index: 1;
   }
 }
