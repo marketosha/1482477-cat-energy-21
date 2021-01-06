@@ -34,7 +34,6 @@
         background-color: $green-opacity-85;
 
         @media (min-resolution: 2dppx) {
-          content: "";
           background-image: url("../img/cat_background_desktop@2x.jpg");
           background-size: 727px 694px;
         }

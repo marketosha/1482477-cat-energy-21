@@ -94,10 +94,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    --container-block-padding: 448px;
+    --container-block-indent: 448px;
+    --container-width: 50% - var(--container-padding) +
+      var(--content-area-padding);
     top: -315px;
-    left: calc(50% - var(--container-padding) + var(--content-area-padding) +
-        var(--container-block-padding));
+    left: calc(var(--container-width) + var(--container-block-indent));
     width: 552px;
     height: 499px;
     z-index: 1;
