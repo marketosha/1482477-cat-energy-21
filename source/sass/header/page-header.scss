@@ -53,14 +53,12 @@
 .page-header__logo {
   height: 38px;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 9px;
-    height: 52px;
+  &:hover {
+    opacity: 0.8;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-top: 36px;
-    height: 59px;
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -74,8 +72,19 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 9px;
     width: 202px;
     height: 59px;
+  }
+
+  &--index {
+    @media (min-width: $tablet-width) {
+      margin-top: 9px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 36px;
+    }
   }
 }
 

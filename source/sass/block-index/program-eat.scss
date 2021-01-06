@@ -94,9 +94,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    --container-block-indent: 448px;
+    --program-eat-image-indent: 448px;
     top: -315px;
-    left: calc(var(--container-width) + var(--container-block-indent));
+    left: calc(var(--container-width) + var(--program-eat-image-indent));
     width: 552px;
     height: 499px;
     z-index: 1;

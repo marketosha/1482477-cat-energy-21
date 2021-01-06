@@ -1,4 +1,5 @@
 .form-info__description {
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 14px;
@@ -91,6 +92,28 @@
       margin-right: 11px;
     }
   }
+}
+
+.form-info__image {
+  position: absolute;
+  z-index: 2;
+  top: 55%;
+  right: 15px;
+  transform: translateY(-50%);
+
+  &--email {
+    @media (min-width: $desktop-width) {
+      right: 29px;
+    }
+  }
+}
+
+.form-info__input--contact:active + .form-info__image {
+  color: $basic_green;
+}
+
+.program-form__input--contact:disabled + .form-info__image {
+  color: $red;
 }
 
 .form-info__label {
