@@ -46,4 +46,17 @@
   @media (min-width: $desktop-width) {
     margin-top: 75px;
   }
+
+  &:hover,
+  &:focus {
+    border: $border-input-hover;
+  }
+
+  &:active {
+    border: $border-input-active;
+  }
+
+  &:disabled {
+    border: $border-input-disabled;
+  }
 }
