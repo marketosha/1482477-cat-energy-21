@@ -52,13 +52,13 @@
       height: 33px;
     }
   }
+}
 
-  &:hover,
-  &:focus {
-    color: $basic_green;
-  }
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  color: $basic_green;
+}
 
-  &:active {
-    color: $light-green;
-  }
+.social__link:active .social__icon {
+  color: $light-green;
 }

@@ -53,7 +53,8 @@
 .page-header__logo {
   height: 38px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 

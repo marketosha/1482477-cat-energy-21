@@ -97,9 +97,13 @@
 .form-info__image {
   position: absolute;
   z-index: 2;
-  top: 55%;
+  top: calc(100% - 22px);
   right: 15px;
   transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    top: calc(100% - 25px);
+  }
 
   &--email {
     @media (min-width: $desktop-width) {
