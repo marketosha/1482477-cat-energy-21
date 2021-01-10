@@ -132,3 +132,16 @@
     }
   }
 }
+
+.filter__input:hover + .filter__label::before {
+  border-color: $border-darker-grey;
+}
+
+.filter__input:focus + .filter__label::before {
+  border-color: $border-darker-grey;
+  box-shadow: 0 3px 3px 0 $border-darker-grey;
+}
+
+.filter__input:disabled + .filter-label::before {
+  opacity: 0.3;
+}

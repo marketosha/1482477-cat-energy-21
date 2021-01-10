@@ -6,11 +6,22 @@
   height: 289px;
   background-image: url("../img/gift_cat.png");
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift_cat@2x.png");
+    background-size: 280px 289px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 69px;
     margin-bottom: 4px;
     width: 708px;
     height: 200px;
+    background-image: url("../img/gift_cat_tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift_cat_tablet@2x.png");
+      background-size: 708px 200px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -18,6 +29,12 @@
     margin-bottom: 86px;
     width: 245px;
     height: 289px;
+    background-image: url("../img/gift_cat_desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift_cat_desktop@2x.png");
+      background-size: 245px 289px;
+    }
   }
 }
 
