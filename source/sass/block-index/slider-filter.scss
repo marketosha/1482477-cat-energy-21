@@ -2,7 +2,7 @@
   padding: 0 36px 36px 36px;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 61px 67px 61px;
+    padding: 13px 61px 69px 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +20,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     font-size: 20px;
     line-height: 30px;
     background-color: transparent;
@@ -33,9 +34,32 @@
       border: none;
     }
   }
+
+  &--before {
+    margin-right: 11px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+      margin-left: 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 27px;
+      margin-right: 14px;
+    }
+  }
+
+  &--after {
+    margin-left: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 10px;
+      margin-left: 0;
+    }
+  }
 }
 
-.slider-filter__scale {
+.slider-filter__bar {
   width: 84px;
   height: 14px;
   background-color: $white;
@@ -56,25 +80,26 @@
   }
 }
 
-.slider-filter__bar {
+.slider-filter__slider {
   display: block;
   width: 35px;
   height: 6px;
-  margin: 3px;
+  margin-top: 3px;
   background: $basic_green;
   border-radius: 6px;
   cursor: pointer;
+  transform: translateX(var(--range-position));
+  transition: transform 1s ease-in-out;
 
   @media (min-width: $tablet-width) {
     position: absolute;
+    margin: 0;
     top: -13px;
-    left: 46.5%;
     width: 34px;
     height: 34px;
     border: $border-range;
     box-shadow: 0 1px 3px 1px $black-shadow;
     border-radius: 50%;
-    margin: 0;
 
     &:active::before {
       content: "";

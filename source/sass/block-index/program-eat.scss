@@ -6,7 +6,7 @@
   min-height: 302px;
   width: 100%;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: $density-pixel) {
     background-image: url("../img/cat_background@2x.jpg");
     background-size: 320px 302px;
     background-color: $green-opacity-85;
