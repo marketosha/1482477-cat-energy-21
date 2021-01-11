@@ -46,3 +46,25 @@ $border-range: 13px solid $white;
 $border-range-active: 1px solid $basic-green;
 $border-dotted: 1px dotted $black;
 $border-solid: 1px solid $black;
+
+//image variable
+
+$density-pixel: 2dppx;
+
+//slide
+
+:root {
+  --slide-shift: 0;
+  --slide-width: 320px;
+  --range-position: 5px;
+  --range-position-left: 5;
+  --range-position-right: 43px;
+
+  @media (min-width: $tablet-width) {
+    --slide-shift: 325px;
+    --slide-width: 690px;
+    --range-position: 196px;
+    --range-position-left: 0;
+    --range-position-right: 428px;
+  }
+}

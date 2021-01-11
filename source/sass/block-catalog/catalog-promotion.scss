@@ -6,7 +6,7 @@
   height: 289px;
   background-image: url("../img/gift_cat.png");
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: $density-pixel) {
     background-image: url("../img/gift_cat@2x.png");
     background-size: 280px 289px;
   }
@@ -18,7 +18,7 @@
     height: 200px;
     background-image: url("../img/gift_cat_tablet.png");
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $density-pixel) {
       background-image: url("../img/gift_cat_tablet@2x.png");
       background-size: 708px 200px;
     }
@@ -31,7 +31,7 @@
     height: 289px;
     background-image: url("../img/gift_cat_desktop.png");
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $density-pixel) {
       background-image: url("../img/gift_cat_desktop@2x.png");
       background-size: 245px 289px;
     }

@@ -33,9 +33,13 @@
       border: none;
     }
   }
+
+  &--before {
+    padding-right: 12px;
+  }
 }
 
-.slider-filter__scale {
+.slider-filter__bar {
   width: 84px;
   height: 14px;
   background-color: $white;
@@ -56,25 +60,26 @@
   }
 }
 
-.slider-filter__bar {
+.slider-filter__slider {
   display: block;
   width: 35px;
   height: 6px;
-  margin: 3px;
+  margin-top: 3px;
   background: $basic_green;
   border-radius: 6px;
   cursor: pointer;
+  transform: translateX(var(--range-position));
+  transition: transform 1s ease-in-out;
 
   @media (min-width: $tablet-width) {
     position: absolute;
+    margin: 0;
     top: -13px;
-    left: 46.5%;
     width: 34px;
     height: 34px;
     border: $border-range;
     box-shadow: 0 1px 3px 1px $black-shadow;
     border-radius: 50%;
-    margin: 0;
 
     &:active::before {
       content: "";
