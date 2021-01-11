@@ -57,14 +57,14 @@ $density-pixel: 2dppx;
   --slide-shift: 0;
   --slide-width: 320px;
   --range-position: 5px;
-  --range-position-left: 5;
+  --range-position-left: 5px;
   --range-position-right: 43px;
 
   @media (min-width: $tablet-width) {
     --slide-shift: 325px;
     --slide-width: 690px;
-    --range-position: 196px;
+    --range-position: 200px;
     --range-position-left: 0;
-    --range-position-right: 428px;
+    --range-position-right: 394px;
   }
 }

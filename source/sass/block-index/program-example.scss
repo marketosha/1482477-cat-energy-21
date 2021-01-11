@@ -215,10 +215,11 @@
 .program-example__image {
   object-fit: cover;
   object-position: left;
+  width: var(--slide-width);
 
   @media (min-width: $tablet-width) {
     width: var(--slide-width);
-    height: 519px;
+    height: 517px;
   }
 
   &--after {
@@ -229,24 +230,25 @@
 
 .program-example__image-container {
   display: flex;
-  overflow: hidden;
-  margin-top: 40px;
-  margin-bottom: 23px;
+  margin-top: 35px;
+  margin-bottom: 28px;
+  margin-left: -21px;
 
   @media (min-width: $tablet-width) {
     margin-top: 80px;
     margin-bottom: 0;
+    margin-left: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    margin-top: 3px;
     margin-bottom: 20px;
   }
 }
 
 .program-example__image-wrapper {
   width: calc(var(--slide-width) - var(--slide-shift));
-  overflow-x: hidden;
+  overflow: hidden;
   transition: width 1s ease-in-out;
 
   &--after {
