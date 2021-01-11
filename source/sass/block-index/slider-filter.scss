@@ -44,7 +44,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 17px;
+      margin-left: 27px;
       margin-right: 14px;
     }
   }
@@ -54,6 +54,7 @@
 
     @media (min-width: $tablet-width) {
       margin-right: 10px;
+      margin-left: 0;
     }
   }
 }
