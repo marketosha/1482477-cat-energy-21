@@ -100,7 +100,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 3px;
+      margin-top: 0;
     }
   }
 
@@ -115,6 +115,10 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 6px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
     }
   }
 }
@@ -136,6 +140,10 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 2px;
   }
 
   .carryover {
@@ -185,5 +193,9 @@
     padding-bottom: 11px;
     margin-top: 15px;
     margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
   }
 }
