@@ -35,8 +35,9 @@
   @media (min-width: $tablet-width) {
     display: block;
     position: relative;
-    margin-top: 78px;
+    margin-top: 76px;
     margin-left: 52px;
+    width: 400px;
     font-size: 36px;
     line-height: 40px;
   }
@@ -49,7 +50,7 @@
   &::before {
     content: "";
     display: block;
-    margin-right: 18px;
+    padding-right: 68px;
     height: 53px;
 
     @media (min-width: $tablet-width) {
@@ -59,7 +60,7 @@
     @media (min-width: $desktop-width) {
       position: static;
       display: block;
-      margin-right: 62px;
+      padding-right: 161px;
     }
   }
 
@@ -113,7 +114,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        margin-right: 45px;
+        margin-right: 19px;
         top: 0;
         left: 0;
         width: 134px;

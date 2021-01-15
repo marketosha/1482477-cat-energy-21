@@ -19,7 +19,7 @@
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 47px;
+    padding-top: 41px;
     padding-bottom: 61px;
     font-size: 60px;
     line-height: 64px;
@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 67px;
+    padding-top: 61px;
     padding-bottom: 73px;
   }
 }
@@ -64,14 +64,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
+    margin-bottom: 53px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 68px;
-    padding-top: 72px;
+    padding-top: 71px;
     width: 436px;
 
     .carryover {
@@ -199,7 +199,7 @@
 
 .program-example__slider {
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient($white 0%, $white 26%, $light-grey 26%, $light-grey 100%);
+    background-image: linear-gradient($white 0%, $white 27%, $light-grey 26%, $light-grey 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -254,10 +254,6 @@
   &--after {
     width: var(--slide-shift);
   }
-}
-
-.program-example__button-wrapper {
-  margin-bottom: 37px;
 }
 
 .program-example__button {

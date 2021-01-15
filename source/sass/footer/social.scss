@@ -1,12 +1,13 @@
 .social {
   display: flex;
-  padding-top: 21px;
-  padding-bottom: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   justify-content: center;
   border-top: $border-line-grey;
   border-bottom: $border-line-grey;
 
   @media (min-width: $tablet-width) {
+    padding-top: 18px;
     border-top: none;
     border-bottom: none;
   }
