@@ -15,8 +15,7 @@
   --content-area: 320px;
   --container-padding: calc((var(--content-area)) / 2);
   --content-area-padding: 20px;
-  --container-width: calc(50% - var(--container-padding) +
-    var(--content-area-padding));
+  --container-width: calc(50% - var(--container-padding) + var(--content-area-padding));
   padding: 0 var(--container-width);
 
   @media (min-width: $tablet-width) {
@@ -87,57 +86,78 @@
   vertical-align: middle;
 }
 
-//border
+//context-line
 
-.border-title {
-  display: inline;
+.context-line {
   position: relative;
-  padding-right: 46px;
-
-  &--comment,
-  &--extra {
-    padding-right: 22px;
-
-    @media (min-width: $tablet-width) {
-      padding-right: 39px;
-    }
-  }
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    width: 100vw;
-    height: 2px;
-
-    @media (min-width: $tablet-width) {
-      top: 30px;
-      margin-right: 40px;
-      background-color: $basic_green;
-    }
-  }
 
   &::before {
-    right: 100%;
-  }
-
-  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: -33px;
+    top: 50%;
+    width: 100vw;
+    height: 2px;
     left: 100%;
     background-color: $basic_green;
+
+    @media (min-width: $tablet-width) {
+      z-index: -1;
+      left: -1000%;
+      right: -1000%;
+      width: auto;
+    }
   }
 
-  &--catalog {
-    &::before,
-    &::after {
-      @media (min-width: $tablet-width) {
-        margin-right: 0;
-      }
+  &--form {
+    &::before {
+      margin-left: -80px;
+      top: 15px;
 
-      @media (min-width: $desktop-width) {
-        margin-right: 40px;
-        top: 29px;
+      @media (min-width: $tablet-width) {
+        top: 23px;
       }
+    }
+  }
+
+  &--comment {
+    &::before {
+      margin-left: 21px;
+      top: 15px;
+
+      @media (min-width: $tablet-width) {
+        top: 22px;
+      }
+    }
+  }
+
+  &--extra {
+    &::before {
+      margin-left: 21px;
+      top: 20px;
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+      }
+    }
+  }
+}
+
+.context-name {
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -40px;
+    padding: 0 38px;
+    background-color: $white;
+  }
+
+  &--form {
+    padding-right: 80px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 38px;
     }
   }
 }

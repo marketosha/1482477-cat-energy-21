@@ -93,8 +93,9 @@
         </div>
       </div>
       <fieldset class="form__contact-user contact-user form-border fieldset-indent container">
-        <h2 class="contact-user__title title border-title">Контактные данные
-          (владельца кота)</h2>
+        <h2 class="contact-user__title title context-line context-line--form">
+          <span class="context-name context-name--form">Контактные данные (владельца кота)</span>
+        </h2>
         <div class="contact-user__description-wrapper  form-info">
           <div class="form-info__description form-info__description--contact">
             <label class="form-info__label form-info__label--contact" for="contact-mail">E-mail:*</label>
@@ -118,13 +119,13 @@
       </fieldset>
       <fieldset class="form__user-comment user-comment form-border fieldset-indent container">
         <div>
-          <label class="user-comment__label border-title border-title--comment" for="comment-text">Комментарий</label>
+          <label class="user-comment__label context-line context-line--comment context-name" for="comment-text">Комментарий</label>
         </div>
         <textarea name="user-comment__text" id="comment-text" rows="8"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__extra-filter extra-filter form-border fieldset-indent container">
-        <legend class="extra-filter__title border-title border-title--extra">Дополнительно</legend>
+        <legend class="extra-filter__title context-line context-line--extra context-name">Дополнительно</legend>
         <ul class="extra-filter__list filter filter--border list">
           <li class="filter__item filter__item--extra">
             <input class="filter__input visually-hidden" type="checkbox" name="extra-suger" value="suger"
@@ -162,7 +163,7 @@
           <div class="contacts__window contacts__window--form container">
             <p class="contacts__title title">Приглашаем<br class="carryover">к сотрудничеству дилеров!</p>
             <address class="contacts__text text">ул. Большая<br class="carryover"> Конюшенная, д.
-              19/8&nbsp;<br class="carryover">
+              19/8<br class="carryover">
               <span class="contacts__text-city">
                 Санкт-Петербург
               </span>
