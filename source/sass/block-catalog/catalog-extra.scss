@@ -1,6 +1,6 @@
 .catalog-extra {
   overflow: hidden;
-  margin-top: 24px;
+
 }
 
 .catalog-extra__wrapper {
@@ -14,14 +14,15 @@
 }
 
 .catalog-extra__name {
-  margin-top: 28px;
-  margin-bottom: 35px;
+  margin-top: 24px;
+  margin-bottom: 29px;
   padding-right: 22px;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     padding-left: 38px;
     padding-right: 35px;
     font-size: 36px;
@@ -35,7 +36,7 @@
 
 .catalog-extra__list {
   @media (min-width: $tablet-width) {
-    margin-top: 79px;
+    margin-top: 76px;
     border: $border-input-hover;
   }
 
