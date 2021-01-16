@@ -15,9 +15,7 @@
   --content-area: 320px;
   --container-padding: calc((var(--content-area)) / 2);
   --content-area-padding: 20px;
-  --container-width: calc(
-    50% - var(--container-padding) + var(--content-area-padding)
-  );
+  --container-width: calc(50% - var(--container-padding) + var(--content-area-padding));
   padding: 0 var(--container-width);
 
   @media (min-width: $tablet-width) {
@@ -89,6 +87,7 @@
 }
 
 //context-line
+
 .context-line {
   position: relative;
 
@@ -150,16 +149,15 @@
 
   @media (min-width: $tablet-width) {
     margin-left: -40px;
-    padding: 0px 38px;
-    background: #fff;
+    padding: 0 38px;
+    background-color: $white;
   }
 
   &--form {
     padding-right: 80px;
 
     @media (min-width: $tablet-width) {
-      margin-left: -40px;
-      padding: 0px 38px;
+      padding-right: 38px;
     }
   }
 }
