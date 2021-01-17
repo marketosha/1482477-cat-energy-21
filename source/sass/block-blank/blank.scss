@@ -1,0 +1,57 @@
+.blank {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.blank__image {
+  margin-top: 50px;
+  width: 300px;
+  height: 100px;
+}
+
+.blank__text {
+  margin-top: 70px;
+  font-size: 60px;
+  line-height: 64px;
+  font-weight: 500;
+
+  &--information {
+    font-weight: 600;
+  }
+
+  &--adress {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+.blank__title {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 400;
+}
+
+.blank__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.blank__item {
+  padding-right: 40px;
+}
+
+.blank__icon {
+  color: $black-icon;
+  width: 40px;
+  height: 40px;
+}
+
+.blank__link:hover .blank__icon,
+.blank__link:focus .blank__icon {
+  color: $basic_green;
+}
+
+.blank__link:active .blank__icon {
+  color: $light-green;
+}

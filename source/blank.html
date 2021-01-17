@@ -4,29 +4,49 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="blank container">
   <header>
-    <img src="https://via.placeholder.com/150x150" alt="Логотип Кэт энерджи">
+    <picture>
+      <source media="(min-width: 1280px)" srcset="img/header_logo_desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/header_logo_tablet.svg">
+      <img class="blank__image image-normalize" src="img/header__logo.svg" width="191" height="38"
+        alt="Логотип CatEnergy">
+    </picture>
   </header>
   <main>
     <h1 class="visually-hidden">Кэт энерджи</h1>
-    <p class="page-information">Сайт в разработке</p>
-    <h2>Чтобы связаться с нами</h2>
-    <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <p class="blank__text blank__text--information title">Сайт в разработке</p>
+    <h2 class="blank__title">Чтобы связаться с нами</h2>
+    <p class="blank__text blank__text--adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
   </main>
   <footer>
-    <h2>Следите за обновлениями в соц сетях</h2>
-    <ul class="social__list">
-      <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="#" aria-label="ВКонтакте"></a>
+    <h2 class="blank__title">Следите за обновлениями в соц сетях</h2>
+    <ul class="blank__list list">
+      <li class="blank__item">
+        <a class="blank__link" href="#" aria-label="ВКонтакте">
+          <svg class="blank__icon image-normalize" width="23" height="16">
+            <use xlink:href="img/icon/icon-vk.svg#icon-vk"></use>
+          </svg>
+        </a>
       </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="#" aria-label="Facebook"></a>
+      <li class="blank__item">
+        <a class="blank__link" href="#" aria-label="Instagram">
+          <svg class="blank__icon  image-normalize" width="16" height="16">
+            <use xlink:href="img/icon/icon-instagram.svg#icon-instagram"></use>
+          </svg>
+        </a>
       </li>
-      <li class="social__item">
-        <a class="social__link social__link--instagram" href="#" aria-label="Instagram"></a>
+      <li class="blank__item">
+        <a class="blank__link" href="#" aria-label="Facebook">
+          <svg class="blank__icon image-normalize" width="22" height="22">
+            <use xlink:href="img/icon/icon-facebook.svg#icon-facebook"></use>
+          </svg>
+        </a>
       </li>
     </ul>
   </footer>
