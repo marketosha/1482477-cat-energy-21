@@ -142,6 +142,16 @@
       }
     }
   }
+
+  &--catalog {
+    &::before {
+      top: 16px;
+
+      @media (min-width: $tablet-width) {
+        top: 24px;
+      }
+    }
+  }
 }
 
 .context-name {

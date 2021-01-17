@@ -15,7 +15,6 @@
     grid-template-columns: repeat(4, 1fr);
     row-gap: 141px;
     column-gap: 80px;
-    margin-bottom: 72px;
   }
 }
 
@@ -36,6 +35,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 38px;
+    height: 100%;
     background-color: $basic_grey;
     border: none;
   }
@@ -160,6 +160,7 @@
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
     font-size: 16px;
     line-height: 18px;
     color: $special_dark-grey;
@@ -191,11 +192,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 11px;
     padding-bottom: 11px;
-    margin-top: 15px;
-    margin-bottom: 44px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 17px;
+    margin-top: auto;
+    margin-bottom: 39px;
   }
 }
