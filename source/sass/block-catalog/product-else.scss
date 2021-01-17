@@ -4,7 +4,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     padding: 0 35px;
     max-width: 324px;
@@ -19,7 +18,7 @@
 
 .product-else__title {
   position: relative;
-  padding-top: 77px;
+  padding-top: 79px;
   font-size: 16px;
   line-height: 20px;
   color: $black-text;
@@ -37,12 +36,11 @@
 
     @media (min-width: $tablet-width) {
       width: 60px;
-      top: 49px;
+      top: 83px;
       left: 44px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 48px;
       left: 46px;
     }
   }
@@ -52,7 +50,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 127px;
+    margin-bottom: 24px;
+    padding-top: 162px;
     width: 149px;
     max-width: 100%;
     font-size: 20px;
@@ -60,7 +59,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 126px;
+    padding-top: 162px;
   }
 }
 
@@ -72,10 +71,10 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
     padding-top: 0;
     padding-left: 24px;
     padding-right: 22px;
-    margin-top: -39px;
     font-size: 16px;
     line-height: 18px;
   }
@@ -83,20 +82,19 @@
   @media (min-width: $desktop-width) {
     padding-left: 0;
     padding-right: 0;
-    margin-top: -39px;
   }
 }
 
 .product-else__button {
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   padding: 10px;
   font-size: 16px;
   color: $special_dark-grey;
   background-color: $basic_grey;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-    padding: 14px 44px;
+    margin-bottom: 39px;
+    padding: 12px 44px;
     width: 100%;
   }
 
