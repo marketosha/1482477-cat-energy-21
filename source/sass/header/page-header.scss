@@ -47,7 +47,26 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 13px;
+  height: 66px;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+    padding-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+  }
+
+  &--index {
+    @media (min-width: $tablet-width) {
+      padding-top: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 45px;
+    }
+  }
 }
 
 .page-header__logo {
@@ -76,16 +95,6 @@
     margin-top: 9px;
     width: 202px;
     height: 59px;
-  }
-
-  &--index {
-    @media (min-width: $tablet-width) {
-      margin-top: 9px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-top: 36px;
-    }
   }
 }
 

@@ -48,16 +48,15 @@
     }
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: $border-input-hover;
   }
 
-  &:active {
-    border: $border-input-active;
+  &:focus {
+    box-shadow: 0 0 2px 0 $special_dark-grey inset;
   }
 
-  &:disabled {
+  &:invalid:not(:placeholder-shown) {
     border: $border-input-disabled;
   }
 
@@ -112,11 +111,11 @@
   }
 }
 
-.form-info__input--contact:active + .form-info__image {
+.form-info__input--contact:disabled + .form-info__image {
   color: $basic_green;
 }
 
-.program-form__input--contact:disabled + .form-info__image {
+.form-info__input--contact:invalid:not(:placeholder-shown) + .form-info__image {
   color: $red;
 }
 

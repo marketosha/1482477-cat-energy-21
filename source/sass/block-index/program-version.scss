@@ -198,8 +198,7 @@
 .program-version__button:hover .program-version__button-image,
 .program-version__button:focus .program-version__button-image,
 .program-version__button:active .program-version__button-image {
-  width: 40px;
-  height: 15px;
+  transform: scaleX(1.2);
 }
 
 .program-version__button-image {

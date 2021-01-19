@@ -44,6 +44,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
   height: 289px;
   font-size: 16px;
   line-height: 20px;
@@ -54,8 +56,8 @@
   &::before {
     content: "";
     display: block;
-    margin-top: 58px;
-    margin-bottom: 49px;
+    margin-top: 57px;
+    padding-top: 130px;
     width: 78px;
     height: 80px;
     background-image: url("../img/gift_catalog.svg");
@@ -68,6 +70,7 @@
 
     @media (min-width: $desktop-width) {
       margin-top: 43px;
+      margin-bottom: 48px;
       padding-top: 80px;
       padding-right: 0;
     }
@@ -76,7 +79,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 78px;
+    margin-left: 69px;
     padding-top: 14px;
     padding-right: 126px;
     height: 200px;
@@ -89,7 +92,7 @@
     align-items: center;
     text-align: center;
     margin-left: 0;
-    padding-right: 0;
+    padding-right: 10px;
     height: 289px;
   }
 }

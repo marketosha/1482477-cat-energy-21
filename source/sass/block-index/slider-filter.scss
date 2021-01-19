@@ -101,13 +101,28 @@
     box-shadow: 0 1px 3px 1px $black-shadow;
     border-radius: 50%;
 
-    &:active::before {
+    &:hover,
+    &:focus {
+      box-shadow: 0 2px 4px 2px $shadow-grey;
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 2px $shadow-grey;
+
+      &::before {
+        border: $border-range-active;
+      }
+    }
+
+    &::before {
       content: "";
       position: absolute;
-      top: -13px;
-      left: -14px;
-      border: $border-range-active;
+      width: 35px;
+      height: 35px;
+      border: $border-input-hover;
       border-radius: 50%;
+      right: -13px;
+      top: -13px;
     }
   }
 }

@@ -47,16 +47,15 @@
     margin-top: 75px;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: $border-input-hover;
   }
 
-  &:active {
-    border: $border-input-active;
+  &:focus {
+    box-shadow: 0 0 2px 0 $special_dark-grey inset;
   }
 
-  &:disabled {
+  &:invalid:not(:placeholder-shown) {
     border: $border-input-disabled;
   }
 }

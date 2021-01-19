@@ -101,4 +101,13 @@
   @media (min-width: $desktop-width) {
     padding: 12px 39px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $border-lighter-grey;
+  }
+
+  &:active {
+    color: $black-opacity-30;
+  }
 }
